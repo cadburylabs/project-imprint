@@ -1,0 +1,3 @@
+function deleteEmailReport(b,e,f){if(!confirm(NS.Translations.dictionary["NLAlertContext.DO_YOU_REALLY_WANT_TO_DELETE_SELECTED_ENTRIES"]))return!1;let c="/app/reporting/emailreport.nl",g=window.location.pathname,h=document.querySelector("#body_actions #_csrf").value;var a={delete:"Delete"};a.kworkitem=b;a.defid=e;a.scheduleid=f;a._csrf=h;a.whence=g;b=[];for(let d in a)b.push(encodeURIComponent(d)+"="+encodeURIComponent(a[d]));c=c.concat("?",b.join("&"));a=new XMLHttpRequest;a.open("POST",c,!1);a.onload=
+()=>{window.location.reload()};a.send()};
+//# sourceMappingURL=/assets/report_resultslist/922253840.map

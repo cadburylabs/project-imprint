@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<symbol viewBox="0 0 16 16" id="INFO" xmlns="http://www.w3.org/2000/svg">
+		<path d="M14.665 8A6.667 6.667 0 1 1 1.332 8a6.667 6.667 0 0 1 13.333 0Zm-6-2.667V4H7.332v1.333h1.333Zm0 6.667V6.667H7.332V12h1.333Z" />
+	</symbol>
+	<symbol viewBox="0 0 16 16" id="CONFIRMATION" xmlns="http://www.w3.org/2000/svg">
+		<path d="M7.998 14.667a6.667 6.667 0 1 0 0-13.334 6.667 6.667 0 0 0 0 13.334Zm-.862-4.196-.471.472-.472-.472-2-2 .943-.942 1.529 1.528 4.195-4.195.943.943-4.667 4.666Z" />
+	</symbol>
+	<symbol viewBox="0 0 16 16" id="WARNING" xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.332 14.667 7.998 1.333l6.667 13.334H1.332Zm6-7.334V10h1.333V7.333H7.332Zm0 4v1.334h1.333v-1.334H7.332Z" />
+	</symbol>
+	<symbol viewBox="0 0 16 16" id="ERROR" xmlns="http://www.w3.org/2000/svg">
+		<path d="M1.332 8a6.667 6.667 0 1 0 13.333 0A6.667 6.667 0 0 0 1.332 8ZM4.86 5.805l.943-.943 5.333 5.333-.942.943L4.86 5.805Z" />
+	</symbol>
+</svg>

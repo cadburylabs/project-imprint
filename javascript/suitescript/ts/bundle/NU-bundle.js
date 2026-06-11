@@ -1,0 +1,1 @@
+"use strict";define("NU/nlog",["require","exports"],function(c,a){Object.defineProperty(a,"__esModule",{value:true});a.testString=void 0;function b(){return"This is a test of a TS API";}a.testString=b;});

@@ -1,0 +1,346 @@
+/*
+ * Copyright © 2025, Oracle and/or its affiliates.
+ */
+
+#panel {
+    float: left;
+    position: relative;
+    left: 20px;
+    width: 345px;
+    margin-right: -345px;
+    border: 1px solid #ccc;
+}
+
+#panel-switcher {
+    font-size: 14px;
+}
+
+.tab-switch {
+    float: left;
+    width: 50%;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #e5e5e5;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+}
+
+.tab-switch:hover {
+    font-weight: bold;
+    color: white;
+}
+
+.tab-switch.hidden {
+    visibility: hidden;
+}
+
+.tab-switch.active {
+    font-weight: bold;
+    color: white;
+    background: transparent url('../../uirefresh/img/tabcontainer-selection.png') no-repeat 50% bottom !important
+}
+
+
+/* Panel - Tab (Header) */
+
+#panel-body .header {
+    font-size: 14px;
+    padding: 10px 10px;
+    border-bottom: 1px solid #ccc;
+    border-top: none;
+}
+
+#panel-body .header .icons {
+    float: right;
+    padding-top: 4px;
+    margin-right: 5px;
+}
+
+#panel-body .header .icons .image-button {
+    float: left;
+}
+
+#panel-body .header .icons .delete-button {
+    margin-left: 30px;
+}
+
+
+/* Panel - Tab (Content) */
+
+#panel-body .content {
+    overflow: scroll;;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 13px;
+}
+
+#panel-body .content dt {
+    font-weight: 600;
+    color: #666666;
+}
+
+#panel-body .content dd {
+    margin-bottom: 10px;
+    color: #262626;
+}
+
+#panel-body .content .minor {
+    border-top: 1px solid #ccc;
+}
+
+.no-data-row {
+    color: gray;
+    padding-left: 10px;
+}
+
+.row-buttons {
+    position: relative;
+    display: none;
+    float: right;
+    background-color: rgba(230, 230, 230, 0.9);
+    padding: 3px 7px;
+    margin-top: -2px;
+    /*width: 65px; <- Commented out since feature 11023 - let it be variable width so it can correctly show bars with 2 and 3 icons*/
+    height: 23px;
+    margin-bottom: -23px;
+    margin-left: -60px;
+}
+
+.row-buttons a {
+    float: left;
+}
+
+.row-buttons a.edit-button, .row-buttons a.add-button{
+    margin-right: 15px;
+}
+
+.row-buttons-view {
+    width: 25px;
+}
+
+.add-entry {
+    display: block;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0px;
+    font-weight: bold;
+    color: #1b5997;
+    padding: 6px 0 0 30px;
+    background-color: #C2D1DD;
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+.add-entry.disabled {
+    color: gray;
+}
+
+/* Panel - Tab - State */
+
+#selected {
+    font-weight: 600;
+    color: #666666;
+}
+
+#selected .name {
+    font-weight: normal;
+    color: #262626;
+}
+
+#state-info-switcher, #tab-state .header .icons {
+    margin-top: 10px;
+}
+
+#state-info-switcher {
+    font-size: 13px;
+    float: left;
+}
+
+#state-info-tab-actions {
+	list-style-type: none;
+	padding-inline-start: 0;
+}
+
+#state-info-tab-actions ul,
+#state-info-tab-fields ul {
+	margin: 0;
+	padding: 0;
+}
+
+.category-row, .trigger-row, .action-group-parent-row {
+    cursor: pointer;
+}
+
+.category-row, .trigger-row, .action-row, .action-group-parent-row, .field-row, .no-data-row {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 6px 12px 6px 30px;
+}
+
+.group-num-actions {
+	display: block;
+	float: right;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+
+.action-group-row.collapsed {
+	background-image: url('../../pages/workflow/nextgen/images/icon_expand_twirl.png');
+}
+
+.trigger-row {
+    background-color: #f0f2f5;
+}
+
+.field-row {
+    padding-left: 10px;
+}
+
+.category-row {
+    background-color: #e0e0e0;
+    background-image: url('../../pages/workflow/nextgen/images/icon_collapse_twirl.png');
+    background-repeat: no-repeat;
+    background-position: 10px 50%;
+}
+
+.category-row.collapsed {
+    background-image: url('../../pages/workflow/nextgen/images/icon_expand_twirl.png');
+}
+
+.category-num-actions {
+    display: block;
+    float: right;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.trigger-row {
+    background-image: url('../../pages/workflow/nextgen/images/icon_collapse_twirl.png');
+    background-repeat: no-repeat;
+    background-position: 10px 50%;
+}
+
+.trigger-row.collapsed {
+    background-image: url('../../pages/workflow/nextgen/images/icon_expand_twirl.png');
+}
+
+.action-group-parent-row {
+	background-image: url('../../pages/workflow/nextgen/images/icon_collapse_twirl.png');
+	background-repeat: no-repeat;
+	background-position: 10px 50%;
+	height: 31px;
+}
+
+.action-group-parent-row.collapsed {
+	background-image: url('../../pages/workflow/nextgen/images/icon_expand_twirl.png');
+}
+
+.action-row, .action-group-parent-row {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.action-row {
+	width: 352px;
+	padding-right: 20px;
+}
+
+.action-row.inactive *, .field-row.inactive *, .action-group-parent-row.inactive * {
+	color: #aaa;
+}
+
+.action-group-row {
+	padding-left: 40px;
+}
+
+.action-type, .field-name {
+    color: #1b5997;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.action-arguments, .field-info {
+    padding-left: 5px;
+    font-size: 12px;
+    color: #666;
+}
+
+
+/* Panel - Tab - Transition */
+
+#tab-transition #selected {
+    float: left;
+    max-width: 240px;
+}
+
+#tab-transition .header .icons {
+    position: relative;
+    top: 18px;
+}
+
+#tab-transition .content .main, #tab-transition .content .minor {
+    padding: 7px 10px;
+}
+
+/* Panel - Tab - Workflow */
+
+#tab-workflow .content .main, #tab-workflow .content .minor {
+    padding: 7px 10px;
+}
+
+#workflow-info-tab-fields {
+    display: none;
+}
+
+#workflow-info-tab-fields ul {
+	margin: 0;
+	padding: 0;
+}
+
+#workflow-info-switcher, #tab-workflow .header .icons {
+    margin-top: 10px;
+}
+
+#workflow-info-switcher {
+    font-size: 13px;
+    float: left;
+}
+
+#workflow-info-tab-summary .sub-types {
+    font-weight: normal;
+}
+
+/* Tooltip */
+
+.workflow-tooltip {
+    word-break: break-all;
+    min-height: 144px !important;
+    max-height: 450px !important;
+}
+
+.workflow-tooltip .subtabblock {
+    background-color: #DEE1E7 !important;
+}
+
+.workflow-tooltip .uir-quickview-content-table {
+    width: 100%;
+    text-align: left;
+}
+
+/* Future work - remove from final version */
+#button-container {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}

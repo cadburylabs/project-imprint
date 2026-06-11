@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 132" id="ogl-launcer-help">
+    <defs></defs>
+    <g id="Layer_2">
+      <g id="Layer_1-2">
+        <path id="info-8" d="M66,11A55,55,0,1,1,11,66,55.06,55.06,0,0,1,66,11ZM66,0a66,66,0,1,0,66,66A66,66,0,0,0,66,0ZM54.82,88.06c3.1-9.84,9-21.63,10-24.61,1.51-4.33-1.16-6.25-9.57,1.15-.54-1.09-1.29-2.33-1.86-3.52C63,50.64,82.74,48.29,76,64.45c-4.2,10.1-7.2,16.91-8.92,22.16-2.5,7.67,3.82,4.56,10-1.16.85,1.38,1.12,1.82,2,3.41C65.32,101.93,50.07,103.09,54.82,88.06ZM80.9,43.13C78,45.61,73.64,45.56,71.21,43s-2-6.64.91-9.13,7.25-2.43,9.68.12S83.82,40.64,80.9,43.13Z"></path>
+      </g>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.02 22.78" id="oracle-logo_header">
+    <defs></defs>
+    <title>o-redwood-logo-white</title>
+    <g id="Layer_2">
+      <g id="Layer_1-2">
+        <path d="M24.63,0H11.39a11.39,11.39,0,0,0,0,22.78H24.63A11.39,11.39,0,0,0,24.63,0Zm-.3,18.77H11.68A7.37,7.37,0,0,1,11.68,4H24.33a7.37,7.37,0,0,1,0,14.74Z"></path>
+      </g>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.94 110.98" id="ogl-launcher-drag">
+    <defs></defs>
+    <title>OGL-drag-icon</title>
+    <g id="Layer_2">
+      <g id="Layer_1-2">
+        <g>
+          <circle cx="14.26" cy="13.63" r="13.63"></circle>
+          <circle cx="53.24" cy="13.63" r="13.63"></circle>
+          <circle cx="92.22" cy="13.63" r="13.63"></circle>
+          <circle cx="13.63" cy="54.41" r="13.63"></circle>
+          <circle cx="52.61" cy="54.41" r="13.63"></circle>
+          <circle cx="91.59" cy="54.41" r="13.63"></circle>
+          <circle cx="15.34" cy="97.35" r="13.63"></circle>
+          <circle cx="54.32" cy="97.35" r="13.63"></circle>
+          <circle cx="93.3" cy="97.35" r="13.63"></circle>
+        </g>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="guide-arrow-icon_header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 252">
+    <defs></defs>
+    <g id="Layer_1-2">
+      <path d="M216.14,50.88,161.61,196.55l-18.3-72.86-72.8-18.2ZM252,15,0,109.5,126,141l31.61,126Z" transform="translate(0 -15)"></path>
+    </g>
+  </symbol>
+  <!-- Redwood design icons-->
+  <symbol id="ogl-rw-print-icon"  viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg">
+    <path d="M5 11V10H4V11H5ZM15 11H16V10H15V11ZM15 19V20H16V19H15ZM5 19H4V20H5V19ZM5 1V0H4V1H5ZM15 1H16V0H15V1ZM15 7V8H16V7H15ZM5 7H4V8H5V7ZM19 15V16H20V15H19ZM19 7H20V6H19V7ZM1 7V6H0V7H1ZM1 15H0V16H1V15ZM5 12H15V10H5V12ZM14 11V19H16V11H14ZM15 18H5V20H15V18ZM6 19V11H4V19H6ZM5 2H15V0H5V2ZM14 1V7H16V1H14ZM15 6H5V8H15V6ZM6 7V1H4V7H6ZM15 16H19V14H15V16ZM20 15V7H18V15H20ZM19 6H1V8H19V6ZM0 7V15H2V7H0ZM1 16H5V14H1V16Z"/>
+  </symbol>
+  <symbol id="ogl-rw-email-icon"  viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 1L10 9L19 1M1 1H19M1 1V17H19V1" stroke="#161513" stroke-width="2"/>
+  </symbol>
+  <symbol id="ogl-rw-unpin-icon"  viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.999996 19L19 19L19 1L0.999998 0.999998L0.999996 19ZM0.999996 19L12 8M12 8L12 15M12 8L5 8" stroke="#161513" stroke-width="2"/>
+  </symbol>
+  <symbol id="ogl-rw-spinner" viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4982 6C6.90836 6 3.99821 8.91015 3.99821 12.5C3.99821 16.0899 6.90836 19 10.4982 19C11.9629 19 13.3119 18.5167 14.3983 17.7005L15.5996 19.2995C14.1788 20.367 12.411 21 10.4982 21C5.80379 21 1.99821 17.1944 1.99821 12.5C1.99821 7.80558 5.80379 4 10.4982 4C15.0026 4 18.688 7.50314 18.9796 11.9343C18.992 12.1214 18.9982 12.3101 18.9982 12.5V13.5858L20.2911 12.2929L21.7053 13.7071L17.9982 17.4142L14.2911 13.7071L15.7053 12.2929L16.9982 13.5858V12.5C16.9982 12.3539 16.9934 12.2091 16.984 12.0657C16.761 8.67882 13.9421 6 10.4982 6Z" fill="#ffffff"/>
+  </symbol>
+</svg>

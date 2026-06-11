@@ -1,0 +1,3111 @@
+
+	/* NSGL Redwood Theme v.2.1.250924 */
+	/* ------------ START ------------ */
+	/* NSGL GLOBAL DECLARATION */
+	/* ----------- EDITABLE ---------- */
+
+	:root {
+		/* NS MAIN COLORS */ 
+		--ns-color-rw-bluegreen-primary: #2C5266; /* TIP BG - NetSuite Pillar Color - Medium Blue Green - NetSuite Tab Nav uses #325C72 - inconsistent*/
+		--ns-color-rw-bluegreen-secondary: #264759; /* SMART TIP BG*/
+		--ns-color-rw-bluegreen-tertiary: #B4D4DF;
+		--ns-color-rw-bluegreen-light: #81B2C3; /* BUTTON HOVER - NetSuite Pillar Color - Light Blue Green */
+		--ns-color-rw-bluegreen-dark: #1A2F3F; /* LINK BUTTONS - NetSuite Pillar Color - Dark Blue Green */
+		--ns-color-rw-bluegreen-primary-hover: #2e566b;
+		--ns-color-rw-bluegreen-dark-hover: #1e3648;
+		
+		--ns-color-rw-bluegreen-1: #36677D; /* TIP FOOTER BUTTONS */		
+		--ns-color-rw-bluegreen-2: #1b3b3f;
+		--ns-color-rw-lightblue-1: #DEECEF; /* BACK BUTTON AND SCROLLBAR -- PREV COLOR: #264759 */
+		--ns-color-rw-bluegreen-1-hover: #467387; /* TIP FOOTER BUTTONS - HOVER */
+		--ns-color-rw-lightblue-1-hover: #EEF5F7; /* BACK BUTTON - HOVER */		
+		
+		--ns-color-rw-white-1: #fff;
+		--ns-color-rw-white-2: #fbf9f8; /* Footer BG and Tip Arrow top, top-left and top-right */
+		--ns-color-rw-white-3: #ddd;
+		
+		--ns-color-rw-yellow-1: #E2C069; /* Hyperlinks */
+		
+		/* FONT FAMILY */
+		--ns-font-rw-size: 15px;
+		--ns-font-rw-family: "Oracle Sans", "Open Sans", Arial, sans-serif;
+		
+		/* OGL REDWOOD ORIGINAL */
+		--ogl-rw-tip-bg: #fff;
+		--ogl-rw-footer-bg: #f5f4f2;
+		--ogl-rw-button-bg: #312d2a;
+		
+		/* DEPRECATED - CLASSIC NSGL COLOR AND FONT */
+		--ns-blue-1: #3A475C; /* Widget BG, Panel Header, Main Tips Primary BG, To Do List BG */
+		--ns-blue-2: #607799; /* Widget Launch Icon Button Hover, Main Tips Secondary BG, Optional Button */
+		--ns-blue-3: #BFC9D6; /* Panel Sidebar */			
+	
+		--ns-red-1: #D13438; /* Beacon*/
+		--ns-gray-1: #5F6060; /* Panel Subtext 1 - Gray */
+		--ns-gray-2: #4A4644; /* Panel Subtext 2 - Gray */
+		--ns-gray-3: #222222; /* Default OGL Theme */
+		--ns-green-1: #1b3b3f; /* Default OGL Theme */
+		--ns-green-2: #477b82; /* Default OGL Theme */
+		--ns-yellow-1: #FFFF00; /* Highlight Border */
+		--ns-yellow-2: #F0CC71; /* Highlight Border */	
+
+		--ns-font-size: 14px;
+		--ns-font: 'Open Sans', Arial, sans-serif; 
+	}
+	
+	/* -------------- END ------------ */
+	/* NSGL GLOBAL DECLARATION */
+	/* ----------- EDITABLE ---------- */
+	
+		
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */	
+	
+	
+	/* !!!!!!!!!!!! START !!!!!!!!!!!! */
+	/* ORIGINAL IRIDIZE DESIGN KIT CSS */
+	/* !!!!!!!!! DO NOT EDIT !!!!!!!!! */
+    
+    div.sttip div.tooltip .popover-inner,
+        div.ir-survey .popover-inner {
+            font-family: "Oracle Sans",sans-serif;
+            color: #222222;
+            font-size: 13.75px;
+            font-weight: normal;
+            background: #fff;
+            border-radius: 6px;
+            border: 0 none;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 12px 16px;
+            box-sizing: border-box;
+            width: 340px;
+        }
+		div.sttip div.tooltip.ogl-rw-tip .popover-inner {
+			box-sizing: inherit;
+		}
+        div.sttip .ir-popover-title,
+        div.sttip .ir-todoList-header {
+            font-size: 20px;
+            margin-top: 0;
+            font-weight: 700;
+        }
+        .ou-panel__header .ou-logo {
+            background-image: url("data:image/svg+xml,%3Csvg height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.05 5C19.898 5 23 8.135 23 12.002 23 15.868 19.898 19 16.05 19l-8.09-.003c-3.844 0-6.96-3.129-6.96-6.995C1 8.135 4.116 5 7.96 5zm-.184 2.474H8.139c-2.487 0-4.503 2.023-4.503 4.528 0 2.5 2.016 4.531 4.503 4.531h7.727c2.494 0 4.508-2.03 4.508-4.531a4.513 4.513 0 00-4.508-4.528z' fill='%23100f0e' fill-rule='evenodd'/%3E%3C/svg%3E");
+            background-size: contain;
+            margin-top: 0;
+        }
+        /* User rating */
+        div.ir-survey .popover-inner {
+            margin: 0 auto;
+            width: 500px;
+            padding-bottom: 24px;
+        }
+        /* Arrows */
+
+		div.sttip div.tooltip.in.top div.tooltip-arrow {
+			bottom: -3px;
+			border-top: 27px solid;
+			border-left: 16px inset transparent;
+			border-right: 16px inset transparent;
+			z-index: -1;
+			width: 2px;
+			margin-left: -19px;
+			margin-bottom: 0px;
+		}
+		
+		div.sttip div.tooltip.in.top div.tooltip-arrow.second-arrow {
+			bottom: -3px;
+			border-top: 22px solid;
+			border-left: 13px inset transparent;
+			border-right: 13px inset transparent;
+			margin-left: -15px;
+			z-index: 1;
+		}
+		
+		div.sttip div.tooltip.in.right div.tooltip-arrow {
+			border-right: 27px solid;
+			left: -3px;
+			border-bottom: 16px inset transparent;
+			border-top: 16px inset transparent;
+			z-index: -1;
+			height: 2px;
+			margin-top: -17px;
+		}
+		
+		div.sttip div.tooltip.in.right div.tooltip-arrow.second-arrow {
+			border-right: 22px solid;
+			left: -3px;
+			border-bottom: 13px inset transparent;
+			border-top: 13px inset transparent;
+			margin-top: -13px;
+			z-index: 1;
+		}
+		
+		div.sttip div.tooltip.in.bottom div.tooltip-arrow {
+			border-bottom: 27px solid;
+			border-left: 16px inset transparent;
+			border-right: 16px inset transparent;
+			top: -3px;
+			margin-left: -19px;
+			z-index: -1;
+			width: 2px;
+		}
+		
+		div.sttip div.tooltip.in.bottom div.tooltip-arrow.second-arrow {
+			border-bottom: 22px solid;
+			border-left: 13px inset transparent;
+			border-right: 13px inset transparent;
+			top: -3px;
+			margin-left: -15px;
+			z-index: 1;
+		}
+		
+		div.sttip div.tooltip.in.left div.tooltip-arrow {
+			border-left: 27px solid;
+			border-bottom: 16px inset transparent;
+			border-top: 16px inset transparent;
+			right: -3px;
+			height: 2px;
+			z-index: -1;
+			margin-top: -17px;
+		}
+		
+		div.sttip div.tooltip.in.left div.tooltip-arrow.second-arrow {
+			border-left: 22px solid;
+			border-bottom: 13px inset transparent;
+			border-top: 13px inset transparent;
+			right: -3px;
+			margin-top: -13px;
+			z-index: 1;
+		}
+		
+		div.sttip div.tooltip.in.bottom-left div.tooltip-arrow {
+		   margin-top:0;
+		}
+
+		div.sttip div.tooltip.in.top-right div.tooltip-arrow {
+			left: 11%
+		}
+		
+		div.sttip div.tooltip.in.bottom-right div.tooltip-arrow {
+			left: 11%;
+			margin-top:0;
+		}
+		
+		/* arrow colors*/
+		
+		div.sttip div.tooltip.in.right div.tooltip-arrow {
+			border-right-color: #C8C8C8;
+			border-right-color: rgba(150, 150, 150, .5);
+			/*opacity:0.3;*/
+		}
+		
+		div.sttip div.tooltip.in.bottom div.tooltip-arrow {
+			border-bottom-color: #C8C8C8;
+			border-bottom-color: rgba(150, 150, 150, .5);
+			/*opacity:0.3;*/
+		}
+		
+		div.sttip div.tooltip.in.left div.tooltip-arrow {
+			border-left-color: #C8C8C8;
+			border-left-color: rgba(150, 150, 150, .5);
+			/*opacity:0.3;*/
+		}
+		
+		div.sttip div.tooltip.in.top div.tooltip-arrow {
+			border-top-color: #C8C8C8;
+			border-top-color: rgba(150, 150, 150, .5);
+			/*opacity:0.3;*/
+		}
+		
+		
+		div.sttip div.tooltip.in.right div.tooltip-arrow.second-arrow {
+			display: block;
+			border-right-color: #fff;
+			width: 0px;
+			height: 0px;
+			opacity: 1;
+		}
+		
+		div.sttip div.tooltip.in.bottom div.tooltip-arrow.second-arrow {
+			display: block;
+			border-bottom-color: #fff;
+			width: 0px;
+			height: 0px;
+			opacity: 1;
+		}
+		
+		div.sttip div.tooltip.in.left div.tooltip-arrow.second-arrow {
+			display: block;
+			border-left-color: #fff;
+			width: 0px;
+			height: 0px;
+			opacity: 1;
+		}
+		
+		div.sttip div.tooltip.in.top div.tooltip-arrow.second-arrow {
+			display: block;
+			border-top-color: #fff;
+			width: 0px;
+			height: 0px;
+			opacity: 1;
+		}
+		/* top-left with Next btn the background is different*/
+		
+		div.sttip div.tooltip.in.top.top-left div.tooltip-arrow.second-arrow {
+			display: block;
+			border-top-color: #fff;
+			width: 0px;
+			height: 0px;
+			opacity: 1;
+		}
+		/* top-left without next btn is the same as default*/
+		
+		div.sttip div.tooltip.in.top.top-left.hideNextBt div.tooltip-arrow.second-arrow {
+			display: block;
+			border-top-color: #fff;
+			width: 0px;
+			height: 0px;
+			opacity: 1;
+		}
+		
+				/* */
+				
+        div.sttip .panel-container .guide-content .guide-search-textbox{
+            padding:0px 0px 5px 0px;
+        }
+        div.sttip .panel-container .guide-content .guide-search-results{
+            overflow-y:auto;
+            max-height: 232px;
+            width:235px;
+        }
+
+        div.sttip :focus,
+        .ir-starRating.ir-focused,
+        .ir-todoList .ir-close:focus {
+            outline: 0 !important;
+        }
+
+        div.sttip h1,
+        div.sttip h2,
+        div.sttip h3,
+        div.sttip h4,
+        div.sttip h5 {
+            font-weight: 700;
+            line-height: 125%;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        div.sttip h1 {
+            font-size: 28px;
+        }
+        div.sttip .steps-count {
+            color: rgba(22, 21, 19, 0.4);
+        }
+
+        div.ir-survey .ir-survey-sad,
+        div.ir-survey .ir-survey-happy {
+            display: none !important;
+        }
+
+        div.sttip div.tooltip .ir-field-container input[type="radio"] {
+            margin-right: 8px;
+        }
+        div.sttip div.tooltip .ir-field-container:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        div.sttip div.tooltip .ir-field-container:last-child {
+            margin-bottom: 0;
+        }
+
+/* Convergence widget */
+div.ou-convergence-launcher aside.ouc-widget {
+    background-color: transparent;
+}
+div.ou-convergence-launcher div.ouc-widget__move-icon {
+    top: -3px;
+    left: 0;
+}
+
+div.ou-convergence-launcher .ouc-widget__launch a {
+    height: auto;
+    width: auto;
+    padding: 0;
+}
+    div.ou-convergence-launcher .ouc-widget__launch a:hover {
+        background-color: transparent;
+        opacity: .9;
+    }
+
+div.ou-convergence-widget {
+    border-radius: 4px;
+    box-shadow: 0px 8px 32px -10px rgba(0, 0, 0, 0.3);
+}
+
+div.ou-convergence-widget .ou-panel__nav {
+    background-color: #F1EFED;
+    border-right: 0 none;
+    border-radius: 4px 0 0px 4px;
+}
+
+div.ou-convergence-widget .ou-panel__content {
+    box-shadow: none;
+    border-radius: 0 4px 4px 0;
+}
+
+div.ou-convergence-widget .ou-panel__header {
+    background-color: #FBF9F8;
+    background-image: url('data:image/png;base64,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');
+    background-repeat: repeat-x;
+    background-position-y: bottom;
+    border-top-right-radius: 4px;
+    color: #161513;
+}
+
+div.ou-convergence-widget .ou-panel__close svg {
+    width: 11px;
+    height: 11px;
+    fill: #161513;
+}
+
+div.ou-convergence-widget .ou-panel__navheader {
+    border-bottom: 0 none;
+}
+
+div.ou-convergence-widget .ou-panel__navlist {
+    border-top: 0 none;
+}
+
+div.ou-convergence-widget .ou-panel__searchbar {
+    font-family: "Oracle Sans";
+}
+
+div.ou-convergence-widget .ou-panel__navlist ul li input:checked + .dg-nav, .ou-panel__navsearch.active label,
+div.ou-convergence-widget .ou-panel__navsearch input:checked + label {
+    color: #1A1816;
+    background-color: rgba(22, 21, 19, 0.08);
+    border: 1px solid rgba(22, 21, 19, 0.5);
+    box-shadow: none;
+}
+
+div.ou-convergence-widget .ou-panel__navlist ul li .dg-nav:hover {
+    box-shadow: none;
+}
+
+div.ou-convergence-widget .ou-panel__header h1 {
+    margin-left: 8px;
+}
+/* */
+
+div.sttip .panel-container .guide-content .iridize-start-panel { background: url('../../../../../d2p93rcsj9dwm5.cloudfront.net/static/tipcms/img/startpanelicons.png') no-repeat top left; width: 20px; height: 20px;  display: inline-block; vertical-align:top; margin-top:2px; margin-right:5px; }
+div.sttip .panel-container .guide-content .iridize-start-panel.knowledge-base { background-position: 0 0; }
+div.sttip .panel-container .guide-content .iridize-start-panel.link { background-position: 0 -20px; }
+div.sttip .panel-container .guide-content .iridize-start-panel.video { background-position:0 -60px; }
+div.sttip .panel-container .guide-content .iridize-start-panel.walkthrough { background-position: 0 -40px; }
+
+
+    div.sttip .panel-container .guide-content {
+        font-family: "Oracle Sans",sans-serif;
+        color: #222222;
+        font-size: 14px;
+        line-height: 1.6;
+        min-height: 120px;
+        padding-bottom: 25px;
+       padding-left:25px
+    }
+    div.sttip .panel-container .guide-content-header-text{
+        padding: 0px 0px;
+        font-size: 12px;
+    }
+
+    div.sttip .panel-container .guide-content .search-textbox{
+        width:180px;
+        padding:0px 10px 0px 0px;
+        margin-top:12px;
+        background: url('../../../../../d2p93rcsj9dwm5.cloudfront.net/static/tipcms/img/search_icon.png') top right no-repeat;
+        padding-right:30px;
+        border-bottom:solid 1px #D8D8D8;
+        outline:none;
+        height:24px;
+        border-radius:0px;
+    }
+
+
+
+      /*  Overlay style change */
+  div.stExposeDiv {
+        opacity: 0.5;
+        display: block;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9000;
+
+        }
+
+   .search-textbox:focus{
+             outline:none;
+    }
+
+    div.sttip .panel-container .guide-content .no-results{
+        width:160px;
+
+        padding:15px 10px 0px 0px;
+    }
+    div.sttip .panel-container .guide-content ul {
+        list-style-type: none;
+        padding: 0px;
+    }
+
+    div.sttip .panel-container .guide-content li {
+        padding: 10px 10px 0px 0px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    div.sttip .panel-container .guide-content li .item-line {
+        display: block;
+        margin-top: 5px;
+        border-bottom: 1px solid #F0F0F0;
+    }
+
+    div.sttip .guide-list .item-text {
+        display: inline-block;
+        width: auto;
+        cursor: pointer;
+        border-radius: 4px;
+        line-height: 25px;
+        padding: 4px 8px;
+    }
+        div.sttip .guide-list .item-text:hover {
+            background-color: #ededed;
+        }
+
+        .ir-reset-tasklist-button {
+            border: 1px solid rgba(22, 21, 19, 0.5);
+        }
+
+
+    div.sttip .guide-list .item-icon,
+    .icon-remove {
+        display: none;
+        opacity: .7;
+        transition: opacity .2s;
+        top: 50%;
+        position: absolute;
+        margin-top: -9px;
+    }
+
+    div.sttip div.tooltip .popover-title .view-less-container {
+        display: flex;
+        align-items: center;
+        float: none;
+        justify-content: flex-end;
+    }
+
+    div.sttip button {
+        outline: none;
+        outline-style: none;
+    }
+
+    div.sttip div.tooltip div.popover-title a[data-iridize-role=closeBt],
+    div.sttip div.tooltip div.popover-title [data-iridize-role=closeBt] {
+        cursor: pointer;
+        font-size: 16px;
+        opacity: .7;
+    }
+        div.sttip div.tooltip div.popover-title a[data-iridize-role=closeBt]:hover,
+        div.sttip div.tooltip div.popover-title [data-iridize-role=closeBt]:hover,
+        div.sttip div.tooltip div.popover-title [data-iridize-role=closeBt]:focus {
+            opacity: 1;
+        }
+
+    div.sttip .panel-container .guide-content li:hover > .item-icon {
+        opacity: .8
+    }
+
+    div.sttip .guide-list .item-icon i {
+        cursor: pointer
+    }
+
+    div.sttip .panel-container .guide-content li:last-child {
+        border-bottom: none
+    }
+
+    div.sttip .panel-container .guide-content li {
+        transition: background .2s, color .2s
+    }
+
+    div.sttip .panel-container .guide-content li:hover {
+        background: #FFFFFF;
+        color: #222222;
+    }
+
+    div.sttip .panel-container .guide-footer {
+        font-family: "Oracle Sans",sans-serif;
+        background: #1b3b3f;
+        padding: 5px 0px;
+    }
+
+    div.sttip .panel-container .guide-footer p {
+        line-height: 35px;
+        height: 35px;
+        text-align: center;
+        font-size: 12px;
+        color: #666666;
+    }
+    div.sttip .panel-container .guide-footer p:hover {
+        color: #222222;
+    }
+
+    div.sttip .panel-container .guide-header {
+        font-family: "Oracle Sans",sans-serif;
+        color: #222222;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 25px 15px 15px 25px;
+    }
+
+    div.sttip.panel {
+        overflow: hidden;
+        top: 350px;
+        position: fixed;
+    }
+
+    div.sttip.panel.rightPanel {
+        right: 0px;
+        width: 300px;
+    }
+
+    div.sttip.panel.leftPanel {
+        width: 300px
+    }
+
+    div.sttip.rightPanel .panel-container {
+        padding-left: 7px
+    }
+
+    div.sttip.leftPanel .panel-container {
+        padding-right: 4px
+    }
+
+    div.sttip.rightPanel .panel-container .guide-list {
+        border-radius: 0px 0px 0px 6px;
+    }
+
+    div.sttip.leftPanel .panel-container .guide-list {
+        float: left;
+        border-radius: 0px 0px 4px 0px;
+        border-right: 1px solid;
+    }
+
+    div.sttip .panel-container .guide-list {
+        display: inline-block;
+        color: #222222;
+        background: #FFFFFF;
+        width: 258px;
+        position: relative;
+        z-index: 1;
+    }
+
+    div.sttip .panel-container {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        padding-bottom: 6px;
+    }
+
+    div.sttip .panel-container,
+    div.sttip.rightPanel.panel-opened {
+        width: 380px
+    }
+
+    div.sttip.rightPanel.panel-closed {
+        width: 48px
+    }
+
+    div.sttip.leftPanel.panel-opened {
+        left: -1px
+    }
+
+    div.sttip.leftPanel.panel-closed {
+        left: -260px
+    }
+
+    div.sttip.rightPanel.panel-close {
+        transition: width 400ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+        /* easeOutBack */
+    }
+
+    div.sttip.rightPanel.panel-open {
+        transition: width 400ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+        /* easeInBack */
+    }
+
+    div.sttip.leftPanel.panel-close {
+        transition: left 400ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+        /* easeOutBack */
+    }
+
+    div.sttip.leftPanel.panel-open {
+        transition: left 400ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+        /* easeInBack */
+    }
+
+    div.sttip .panel-container .flap {
+        cursor: pointer;
+        padding: 10px;
+        display: inline-block;
+        box-shadow: none !important;
+        width: 14px;
+        position: relative;
+        z-index: 2;
+        margin-top: 0px;
+        transition: background .2s;
+    }
+
+    div.sttip .panel-container .flap:hover,
+    div.sttip .panel-container .flap:focus {
+        background: rgb(58, 54, 50);
+        opacity: 1;
+    }
+
+    div.sttip .panel-container .flap > .flap-text {
+        font-family: "Oracle Sans",sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.1;
+        color: #FFFFFF;
+        width: 1em;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    div.sttip.rightPanel .panel-container .flap {
+        border-right: none;
+        float: left;
+        border-width: 0px;
+        border-radius: 4px 0px 0px 4px;
+        color: #FFF;
+        left: 1px;
+    }
+
+    div.sttip.leftPanel .panel-container .flap {
+        border-left: none;
+        border-width: 0px;
+        border-radius: 0px 4px 4px 0px;
+        color: #FFF;
+        right: 1px;
+    }
+
+    div.sttip div.tooltip.in.right {
+        margin-left: 8px;
+        padding-left: 18px;
+    }
+
+    div.sttip div.tooltip.in.left {
+        margin-left: -16px;
+        padding-right: 18px;
+    }
+
+    div.sttip div.tooltip.in.top {
+        margin-top: -16px;
+        padding-bottom: 18px;
+    }
+
+    div.sttip div.tooltip.in.bottom {
+        margin-top: 8px;
+        padding-top: 18px;
+    }
+    /* CUSTOM THEME */
+
+    div.sttip div.tooltip a,
+    div.sttip div.tooltip div.popover-content,
+    div.sttip div.tooltip div.stFooter,
+    div.sttip .panel-container .guide-content,
+    div.sttip .panel-container .guide-footer {
+        font-family: "Oracle Sans",sans-serif;
+        color: #222222;
+        font-size: 13.75px;
+    }
+
+    div.sttip div.tooltip a{
+         text-decoration: underline;
+    }
+
+    div.sttip div.tooltip div.popover-content,
+    div.sttip div.tooltip div.stFooter,
+    div.sttip .panel-container .guide-content,
+    div.sttip .panel-container .guide-footer {
+        font-weight: normal;
+    }
+
+    div.sttip div.tooltip div.popover-content  {
+        padding: 0;
+        line-height: 125%;
+    }
+    div.sttip div.tooltip .popover-content [data-iridize-id="content"] {
+        display: block;
+        padding: 0;
+    }
+
+    div.sttip div.tooltip .popover-content [data-iridize-id="content"] p {
+        line-height: 1.4;
+    }
+
+    div.stBorderDiv {
+        background-color: #1b3b3f !important;
+        box-shadow: 0 0 7px #477b82 !important;
+    }
+
+    div div.sttip .panel-container .guide-list {
+        box-shadow: none;
+        border: 1px solid #C8C8C8;
+        border: 1px solid rgba(150, 150, 150, .5);
+        color: #222222;
+        background: #fff;
+    }
+
+    div.sttip .panel-container .flap {
+        background: #312d2a;
+        border: 0px solid #222222;
+    }
+
+    div.sttip div.tooltip div.stFooter div,
+    div.sttip div.tooltip div.stFooter a,
+    div.sttip div.tooltip div.stFooter p {
+        font-size: 13.75px;
+    }
+
+
+    div.sttip div.tooltip div.stFooter .powered-by {
+        display: none;
+    }
+
+    div.sttip div.tooltip div.stFooter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 32px;
+        text-align: start;
+    }
+    /*div.sttip div.tooltip div.stepCount,*/
+    div.sttip div.tooltip div.stFooter div[data-iridize-role="nextBtPane"] {
+        display: flex;
+    }
+
+    div.sttip div.stepsCounter {
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    div.sttip div.tooltip div.stFooter .default-later-btn:hover,
+    div.sttip div.tooltip div.stFooter .default-later-btn:focus {
+        text-decoration: underline;
+    }
+
+    
+	div.sttip div.tooltip div.stFooter .next-btn {
+        background-color: #312D2A;
+        color: #fff;
+    }
+        div.sttip div.tooltip div.stFooter .next-btn:hover {
+            background-color: rgb(58, 54, 50);
+        }
+        div.sttip div.tooltip div.stFooter .next-btn:focus,
+        div.sttip div.tooltip div.stFooter .next-btn:active {
+            background-color: rgb(71, 66, 62);
+        }
+		
+	div.sttip div.tooltip div.stFooter .next-btn:after {
+        position: absolute;
+        content:"\bb";
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        right: 10px;
+        font-size:14px;
+        opacity: 0;
+        visibility:hidden;
+    }
+
+    div.sttip div.tooltip div.stFooter .next-btn:hover:after,
+    div.sttip div.tooltip div.stFooter .next-btn:focus:after {
+        right: 5px;
+        opacity: 1;
+        visibility:visible;
+    }
+
+    div.sttip div.tooltip.showPrevBt .stFooter .default-prev-btn {
+        border: 1px solid rgba(22, 21, 19, 0.5);
+    }
+        div.sttip div.tooltip.showPrevBt .stFooter .default-prev-btn:hover {
+            background-color: rgba(22, 21, 19, .04);
+        }
+        div.sttip div.tooltip.showPrevBt .stFooter .default-prev-btn:focus,
+        div.sttip div.tooltip.showPrevBt .stFooter .default-prev-btn:active {
+            background-color: rgba(22, 21, 19, .06);
+        }
+	div.sttip div.tooltip div.stFooter .default-prev-btn:before {
+        content:"\ab";
+        position: absolute;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        left: 7px;
+        font-size:14px;
+        opacity: 0;
+        visibility:hidden;
+    }
+
+    div.sttip div.tooltip div.stFooter .default-prev-btn:hover:before,
+    div.sttip div.tooltip div.stFooter .default-prev-btn:focus:before {
+        left: 4px;
+        opacity: 1;
+        visibility:visible;
+    }
+
+
+	div.sttip div.tooltip div.stFooter .next-btn,
+	div.sttip div.tooltip.showPrevBt .stFooter .default-prev-btn {
+		border-radius: 4px;
+        cursor: pointer;
+        font-weight: 600;
+        height: 36px;
+        line-height: 36px;
+        margin-left: 8px;
+        min-width: 26px;
+        padding-right: 17px;
+        padding-left: 17px;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        position:relative;
+    }
+	
+    div.sttip div.tooltip.hideNextBt .stFooter .next-btn {
+        display: none;
+    }
+
+
+    div.sttip div.tooltip div.popover-title {
+        font-size: 20px;
+        font-weight: 700;
+        background: none transparent;
+        padding: 0;
+    }
+
+    div.sttip .showLaterBt .stFooter .steps-count {
+        display: none;
+    }
+div.sttip .hideStepsCount .stFooter .steps-count{
+	display:none;
+}
+
+    /* Visibility hidden for closed guide list fix*/
+    div.sttip.panel-closed .panel-container .guide-list {
+        visibility: hidden;
+        max-height:0px;
+    }
+    /* effectively infinite max-height, so it won't limit anything*/
+    div.sttip .panel-container .guide-list{
+        max-height:1000px;
+    }
+    div.sttip.panel-close .panel-container .guide-list {
+        transition: visibility 0ms step-end 600ms, max-height 0ms step-end 600ms;
+    }
+
+    div.sttip.rightPanel.panel-closed {
+        width: 44px;
+    }
+
+/* end visibility hidden fix*/
+
+
+
+
+/* hide disabled back button*/
+div.sttip div.tooltip.showPrevBt .stFooter .default-prev-btn.disabled {
+    display:none;
+}
+
+/* resets needed trying to work on a site with bootstrap */
+div.sttip .tooltip.top:before,
+div.sttip .tooltip.right:before,
+div.sttip .tooltip.top:before,
+div.sttip .tooltip.top-right:before,
+div.sttip .tooltip.top-left:before,
+div.sttip .tooltip.left:before,
+div.sttip .tooltip:before,
+div.sttip .tooltip.bottom-right:before,
+div.sttip .tooltip.bottom-left:before
+ {
+border:none;
+}
+/* end of bootstrap resets */
+
+/* start panel border*/
+div.sttip.panel .panel-container .guide-list,
+div.sttip.panel .panel-container .flap {
+    border: 0 none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* end panel border*/
+
+div.sttip table, div.sttip tr, div.sttip td {
+  border: 1px solid black;
+  padding: 6px 9px;
+}
+
+@media (max-width: 1024px) { .ir-survey .ir-credit { font-size:9px; } .ir-survey .ir-survey-question { font-size:1.14em; } .ir-survey .ir-survey-answer.ir-survey-sad, .ir-survey-answer.ir-survey-sad:hover { width: 30px; height: 30px; background-size: 30px; } .ir-survey .ir-survey-answer.ir-survey-happy, .ir-survey-answer.ir-survey-happy:hover { width: 30px; height: 30px; background-size: 30px; } .ir-survey .ir-survey-answer { width:30px; height:30px; font-size:1em; background-size:30px;} body > .ir-survey{ width:428px; } .ir-survey.ir-survey__center { padding: 35px 53px 35px 53px; margin-left:-267px; } }
+
+@media (max-width: 610px) {.ir-survey .ir-credit { font-size:9px; } .ir-survey .ir-survey-question { font-size:1em; line-height: 9px; } .ir-survey .ir-survey-answer.ir-survey-sad, .ir-survey-answer.ir-survey-sad:hover { width: 30px; height: 30px; background-size: 30px; } .ir-survey .ir-survey-answer.ir-survey-happy, .ir-survey-answer.ir-survey-happy:hover { width: 30px; height: 30px; background-size: 30px; } .ir-survey .ir-survey-answer { font-size:1em; width:30px; height:30px; background-size:30px;} body > .ir-survey{ width:293px;} .ir-survey.ir-survey__center { padding: 9px 10px 9px 10px;  margin-left:-156px; } }
+
+/** handle guide names with multiple lines **/
+/* make guide name appear to the right of the icon and not below it */
+.guide-list span.guide-list__guide-name {
+    display: inline-block;
+    line-height: 18px;
+    width: 185px;
+    cursor: inherit;
+}
+
+/************ start feedback widget styles  *************/
+    .ir-survey {
+        z-index: 122828282882;
+        width: 610px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 5px;
+        padding: 50px 75px 50px 75px;
+    }
+    .ir-survey .ir-feedback {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        border: 0 none;
+        font-family: "Oracle Sans",sans-serif;
+        color: #222222;
+        font-size: 16px;
+        overflow: hidden;
+    }
+
+    .ir-feedback__input textarea {
+        font-family: "Oracle Sans",sans-serif;
+        font-size: 16px;
+    }
+
+    .ir-feeback__footer {
+        background-color: transparent;
+        justify-content: flex-end;
+        height: auto;
+        padding: 0.2rem;
+        flex: auto
+    }
+
+    .ir-pushRight {
+        float: right;
+    }
+
+    .ir-survey a {
+        display: grid;
+        place-items: center;
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+        margin: 0;
+    }
+
+    .ir-survey-answers::before {
+        content: "Poor";
+        margin-right: 12px;
+    }
+
+    .ir-survey-answers::after {
+        content: "Excellent";
+        margin-left: 12px;
+    }
+
+
+    .ir-feeback__footer__submit {
+        border: 1px solid #312D2A;
+        background-color: #312D2A;
+        color: #fff;
+        text-transform: capitalize;
+    }
+        .ir-feeback__footer__submit:hover {
+            background-color: rgb(58, 54, 50);
+        }
+        .ir-feeback__footer__submit:focus,
+        .ir-feeback__footer__submit:active {
+            background-color: rgb(71, 66, 62);
+        }
+
+        .ir-feeback__footer__skip {
+            border: 1px solid rgba(22, 21, 19, 0.5);
+            text-transform: capitalize;
+        }
+        .ir-feeback__footer__skip:hover {
+            background-color: rgba(22, 21, 19, .04);
+        }
+        .ir-feeback__footer__skip:focus,
+        .ir-feeback__footer__skip:active {
+            background-color: rgba(22, 21, 19, .06);
+        }
+
+
+    .ir-color-inherit {
+        cursor: pointer;
+        font-size: 16px;
+        color: rgb(34, 34, 34);
+    }
+        .ir-color-inherit:hover {
+            opacity: 1;
+        }
+
+    .ir-survey-answers {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ir-survey-answer {
+        background-color: #ededed;
+        font-size: 16px;
+        font-weight: 600;
+        width: 44px;
+        margin: 8px;
+        height: 44px;
+        border-radius: 4px;
+        text-decoration: none;
+        display: grid;
+        place-items: center;
+        color: #000;
+    }
+        .ir-survey-answer:hover {
+            background-color: #e2e2e2;
+        }
+        .ir-survey-answer:active,
+        .ir-survey-answer:focus {
+            background-color: #d6d6d6;
+        }
+
+    .ir-survey-question {
+        color: #000;
+        font-weight: 500;
+        font-size: 1em;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        line-height: 33px;
+    }
+
+    .ir-float-container {
+        overflow: hidden
+    }
+
+    body>.ir-survey__top {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    body>.ir-survey__bottom {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    body>.ir-survey__center {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -9em;
+        margin-left: -380px;
+    }
+/************ end feedback widget styles  *************/
+
+/****** modal panel and onboarding widget defaults. *************/
+.ir-todoList.in {
+    z-index: 99;
+}
+
+.ir-todoList-launcher ,
+.ir-helpWidget-launcher{
+    position: fixed;
+    bottom: 20px;
+width:60px;
+height:60px;
+    z-index: 99;
+border-radius:50%;
+background-color: #477b82;
+cursor:pointer;
+}
+
+.ir-todoList-launcher {
+    left: 20px;
+}
+
+.ir-helpWidget-launcher {
+    right: 20px;
+}
+
+/*with a button it is more accessible to keyboard users. */
+.ir-todoList-launcher-button,
+.ir-helpWidget-launcher-button{
+    width: 100%;
+    height: auto;
+    background-size: 50px 50px;
+    background-position: center center;
+    border: none;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    padding: 0;
+    background-color: transparent;
+}
+
+.ir-todoList-launcher-button{
+      background-image: url('../../../../../d2p93rcsj9dwm5.cloudfront.net/static/tipcms/img/todo.png');
+}
+
+.ir-helpWidget-launcher-button {
+      background-image: url('../../../../../d2p93rcsj9dwm5.cloudfront.net/static/tipcms/img/todo.png');
+}
+
+.ir-todoList-launcher-button:focus, .ir-helpWidget-launcher-button:focus{
+outline:none;
+}
+
+.ir-helpWidget-launcher:hover,
+.ir-helpWidget-launcher:focus,
+.ir-todoList-launcher:hover,
+.ir-todoList-launcher:focus{
+opacity:0.9;
+outline:none;
+}
+
+div.sttip.panel.modalPanel{
+    left: -999px;
+}
+
+div.sttip.modalPanel .panel-container {
+    width: auto;
+}
+
+div.sttip.panel.modalPanel .panel-container .guide-list {
+    border: 1px solid rgba(150, 150, 150, 0.5);
+}
+
+.sttip.panel.modalPanel.panel-open.panel-opened.bind-results {
+    left: 50%;
+    margin-left: -150px;
+    top: 100px;
+}
+
+div.sttip  .ir-helpWidget-close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    text-decoration: none;
+}
+
+    div.sttip.modalPanel.panel-open {
+        transition: left 400ms ease-out;
+        /* easeInBack */
+    }
+
+
+    div.ir-marker {
+        /*changing this will affect the color of the help icon*/
+        background-color: #9c9b99;
+        /*added override for internal Talent*/
+        z-index: 9001;
+    }
+
+
+
+    div.ir-beacon:before {
+        box-shadow: 0px 0px 2px 2px #cf4732;
+    }
+
+
+
+/**** TODO WIDGET ******/
+.ir-todoList {
+display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    bottom: 20px;
+    height: 0px;
+    border-radius: 5px;
+    direction: ltr;
+    background: white;
+    border: 1px solid rgba(150, 150, 150, 0.5);
+    font-family: "Oracle Sans",sans-serif;
+    color: #222222;
+    width: 0;
+}
+
+.ir-todoList.in{
+    width: 280px;
+    padding: 24px 24px 6px 24px;
+    transition: 500ms;
+    height: auto;
+    left: 65px;
+    bottom: 65px;
+    top: auto;
+}
+
+.ir-todoList-header {
+    font-size: 21px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.ir-todoList-footer {
+    color: gray;
+    margin-top: 18px;
+    direction: rtl;
+    font-size: 10px;
+}
+
+.ir-todoList-guideName{
+    font-size: 16px;
+    cursor: pointer;
+color:#222222;
+   width: 85%;
+   margin-left: 9px;
+}
+
+.ir-completedGuide .ir-icon-todo {
+    background: black;
+}
+
+.ir-todoList-item.engaged .ir-todoList-guideName {
+    text-decoration: line-through;
+}
+
+.ir-todoList-progress {
+    border: 1px solid #1b3b3f;
+    height: 9px;
+    line-height: 0;
+}
+
+.ir-todoList-progress-complete {
+    height: 100%;
+    width:0;
+    background-color: #1b3b3f;
+    transition: width 2s;
+    float: left;
+}
+
+.ir-todoList-motivation {
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 5px;
+    padding: 6px;
+    color: white;
+    background: #1b3b3f;
+}
+
+.ir-todoList-list {
+    list-style: none;
+    padding: 0;
+    margin-left:0;
+}
+
+.ir-todoList-item {
+    border-radius: 5px;
+    padding: 6px;
+    margin: 0;
+}
+
+.ir-todoList-item:hover {
+    background: #f5f5f5;
+}
+
+.ir-icon-todo {
+    border: 2px solid black;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 6px;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.ir-todoList-item.engaged .ir-icon-todo{
+    background: black;
+}
+
+.ir-todoList .ir-close {
+    float: right;
+    text-decoration: none;
+    cursor: pointer;
+}
+.ir-todoList-items {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.ir-reset-tasklist-button {
+    margin-top: 9px;
+    display: block;
+    font-size: 11px;
+    text-align: right;
+    color: #1b3b3f;
+}
+
+.guide-footer p,
+.ir-todoList-footer,
+.ir-credit span {
+    visibility: hidden;
+}
+
+.ir-todoList-launcher-button:focus {
+    outline: none;
+}
+
+/*added override to element for internal Talent*/
+ir-marker-beacon {
+    z-index: 9006;
+}
+
+div.sttip .panel-container .guide-header.ir-items-header {
+    padding: 10px 0px 0px 0px;
+}
+
+div.sttip .panel-container .guide-content .guide-search-results {
+    width: 250px;
+}
+
+div.sttip .panel-container .guide-list {
+    width: 275px;
+}
+
+div.sttip .panel-container, div.sttip.rightPanel.panel-opened {
+    width: 316px;
+}
+
+textarea.ir-fieldInput {
+    line-height: 1.5em;
+    padding: 2%;
+    max-width: 95%;
+    font-family: 'Oracle Sans', Helvetica, Arial, sans-serif;
+}
+
+div.sttip .panel-container .guide-footer .ir__guide-footer__help-link {
+    font-size: 14px;
+    line-height: 21px;
+    height: auto;
+visibility: visible;
+color:white;
+}
+
+div.sttip .panel-container .guide-footer .ir__guide-footer__help-link:hover {
+    color: white;
+}
+
+button.ir-button-no-styling {
+   background: none;
+   color: inherit;
+   border: none;
+   padding: 0;
+   cursor: pointer;
+   outline: inherit;
+   display: inline-block;
+   text-align: left;
+}
+
+.ir-todoList-listItem {
+    margin-bottom: 9px;
+}
+
+/**** START new_css.css appended to theme ****/
+/**** TODO WIDGET ******/
+div.sttip.ir-todoList {
+display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    bottom: 20px;
+    height: 0px;
+    border-radius: 5px;
+    direction: ltr;
+    background: white;
+    border: 1px solid rgba(150, 150, 150, 0.5);
+    font-family: "Oracle Sans",sans-serif;
+    color: #222222;
+    width: 0;
+}
+
+div.sttip.ir-todoList.in{
+    width: 280px;
+    padding: 24px 24px 6px 24px;
+    transition: 500ms;
+    height: auto;
+    left: 65px;
+    bottom: 65px;
+    top: auto;
+}
+
+div.sttip .ir-todoList-footer {
+    color: gray;
+    font-size: 10px;
+}
+
+div.sttip .ir-todoList-guideName{
+    font-size: 13.75px;
+    cursor: pointer;
+    color:#161513;
+}
+
+div.sttip .ir-completedGuide .ir-icon-todo {
+    background: #161513;
+}
+
+div.sttip .ir-todoList-item.engaged .ir-todoList-guideName {
+    text-decoration: line-through;
+}
+
+div.sttip .ir-todoList-progress {
+    border: 1px solid #477b82;
+    height: 9px;
+    line-height: 0;
+}
+
+div.sttip .ir-todoList-progress-complete {
+    height: 100%;
+    width:0;
+    display: inline-block;
+    background-color: #477b82;
+    transition: width 2s;
+    float:left;
+}
+
+div.sttip .ir-todoList-motivation {
+    border-radius: 4px;
+    height: 4px;
+    background-color: #161513;
+}
+div.sttip .ir-todoList-motivation::before {
+        position: absolute;
+        content: "";
+        height: 4px;
+        left: 24px;
+        background-color: #ededed;
+        z-index: -1;
+        right: 24px;
+        border-radius: 4px;
+    }
+
+div.sttip .ir-todoList-list {
+    list-style: none;
+    padding: 0;
+    margin-left: -8px;
+    margin-right: 8px;
+}
+
+div.sttip .ir-todoList-list > li:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+div.sttip .ir-todoList-item {
+    border-radius: 5px;
+    padding: 6px;
+    margin: 0;
+}
+
+div.sttip .ir-todoList-item:hover {
+    background: #f5f5f5;
+}
+
+div.sttip .ir-icon-todo {
+    border: 1px solid #161513;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+    display: block;
+    margin-right: 8px;
+    border-radius: 10px;
+}
+
+div.sttip .ir-todoList-item.engaged .ir-icon-todo{
+    background-color: #161513;
+}
+
+div.sttip a.ir-close {
+    float: right;
+    text-decoration: none;
+    cursor: pointer;
+    color:#222222;
+}
+div.sttip .ir-todoList-items {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+div.sttip button.ir-reset-tasklist-button {
+    border-radius: 4px;
+    border: 1px solid rgba(22, 21, 19, 0.5);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block !important;
+    font-weight: 600;
+    height: 36px;
+    line-height: 36px !important;
+    font-size: 13.75px;
+    margin-top: 24px;
+    padding: 0 16px !important;
+}
+    div.sttip button.ir-reset-tasklist-button:hover {
+        background-color: rgba(22, 21, 19, .04);
+        border: 1px solid rgba(22, 21, 19, 0.5) !important;
+    }
+    div.sttip button.ir-reset-tasklist-button:focus,
+    div.sttip button.ir-reset-tasklist-button:active {
+        background-color: rgba(22, 21, 19, .06);
+        border: 1px solid rgba(22, 21, 19, 0.5) !important;
+    }
+
+/**** END new_css.css appended to theme ****/
+
+div.sttip .guide-list .ir-todoList-guideName.item-text {
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+/**** START tasklist_css_fixes_030718_2.css appended to theme ****/
+div.sttip .panel-container .guide-content .iridize-start-panel.tasklist {
+	background-position: 0 -80px;
+}
+
+.ir-todoList-launcher-button:focus {
+    outline: none;
+}
+
+.ir-todoList-launcher-button {
+    cursor: pointer;
+}
+
+div.sttip .guide-list .item-text.ir-todoList-guideName {
+    width: 100%;
+}
+
+/**** END tasklist_css_fixes_030718_2.css appended to theme ****/
+
+/** top/bottom help widget location ***/
+div.sttip.panel.bottomPanel{
+    position:fixed;
+    bottom:0px;
+    right: 140px;
+    top: auto;
+}
+
+div.sttip.panel.topPanel {
+    position:fixed;
+    right: 60px;
+    bottom:auto;
+    top: 0px;
+}
+
+div.sttip.panel.topPanel .panel-container .guide-list {
+ border-right: 1px solid rgba(150, 150, 150, 0.5);
+}
+
+
+div.sttip.panel.bottomPanel .panel-container .flap,
+div.sttip.panel.topPanel .panel-container .flap{
+    width:auto;
+    display: block;
+}
+
+div.sttip.panel.bottomPanel .panel-container .flap > .flap-text,
+div.sttip.panel.topPanel .panel-container .flap > .flap-text{
+    width:auto;
+}
+
+div.sttip.bottomPanel.panel-closed,
+div.sttip.topPanel.panel-closed{
+    height: 35px;
+}
+
+div.sttip.bottomPanel.panel-closed,
+div.sttip.topPanel.panel-closed{
+    height: 35px;
+}
+
+div.sttip.bottomPanel.panel-opened,
+div.sttip.topPanel.panel-opened{
+    height: 422px;
+}
+
+div.sttip.bottomPanel.panel-close,
+div.sttip.topPanel.panel-close {
+    -webkit-transition: height 400ms cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-transition: height 400ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    -moz-transition: height 400ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    -ms-transition: height 400ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    -o-transition: height 400ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    transition: height 400ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+div.sttip.bottomPanel.panel-open,
+div.sttip.topPanel.panel-open {
+    -webkit-transition: height 400ms cubic-bezier(0.600, 0, 0.735, 0.045);
+    -webkit-transition: height 400ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+    -moz-transition: height 400ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+    -ms-transition: height 400ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+    -o-transition: height 400ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+    transition: height 400ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+}
+
+div.sttip.bottomPanel .panel-container,
+div.sttip.topPanel .panel-container{
+    width: auto;
+}
+
+/** END top/bottom help widget location ***/
+
+
+div.sttip.leftPanel.panel-closed { left:-277px; }
+
+div.sttip.panel.leftPanel {     width:320px; }
+
+div.sttip.leftPanel .panel-container .flap {     width:15px;  }
+
+div.sttip.panel.bottomPanel .panel-container .guide-list {
+    border-right: 1px solid rgba(150, 150, 150, 0.5);
+}
+
+.iridize-step-guide-frame {
+	border-right: solid 5px #1b3b3f;
+}
+
+.iridizeStepGuideCloserButton a {
+    background-color: #1b3b3f;
+}
+
+.ou-convergence-list
+
+{        z-index: 2147483647; }
+
+/**Display Group Icons**/
+       
+        
+ .fa-clone-navlist{
+    background-image: url('../../../../../catalog-education.oracle.com/oucatalog/GLS_Images/Generic/manager-annual-evaluations.svg');
+}
+        
+ /**Remove borders existing in tables by default - Paul Gehring 12/18/20**/
+       
+div.sttip table, div.sttip tr, div.sttip td {
+  border: none;
+  padding: 6px 9px;
+}
+
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	/* ---------------------------------------------------------------------- */
+	
+	
+	/* ---------- START --------- */
+	/* OGL NSGL THEME CUSTOMIZATION */
+	/* -------- EDITABLE -------- */	
+
+	/* ----------------------------------------------------- */
+	/* ----------------------------------------------------- */
+	/* -----------------------NSGL-------------------------- */
+	/* -------- UPDATED IRIDIZE BASE KIT CSS - START ------- */
+	/* ----------------------------------------------------- */
+	/* ----------------------------------------------------- */
+	/* ----------------------------------------------------- */
+	/********* Z-INDEX - START *********/
+	div.ir-beacon,
+	div.ir-marker,
+	div.sttip.panel {
+		z-index: 8999;
+	}
+	
+	div.stBorderDiv {
+		z-index: 9002;
+	}
+	
+	div.sttip .tooltip {
+		z-index: 9003;
+	}
+	
+	div.ir-marker-beacon {
+		z-index: 9006;
+	}
+	/********* Z-INDEX - END *********/
+	
+	/********* TIP COLOR REDWOOD - START *********/
+	div.sttip h1, div.sttip h2, div.sttip h3, div.sttip h4, div.sttip h5 {
+		color: var(--ns-color-rw-white-1);
+	}
+	
+	aside.ogl-rw-widget,
+	div.ogl-rw-help-widget-header, 
+	div.sttip div.ogl-rw-tip div.popover-inner,
+	div.sttip div.ogl-rw-tip .dragger-tip-container,
+	div.sttip div.ogl-rw-tip .ogl-rw-popover-title,
+	div.sttip div.ogl-rw-tip .ogl-rw-popover-content,
+	div.sttip div.ogl-rw-tip.hideStepsCount.hideCloseBt.hideNextBt div.popover-inner,
+	div.sttip div.ogl-rw-tip.hideStepsCount.hideCloseBt.hideNextBt .dragger-tip-container,
+	div.sttip div.ogl-rw-tip.hideStepsCount.hideCloseBt.hideNextBt .ogl-rw-popover-title,
+	div.sttip div.ogl-rw-tip.hideStepsCount.hideCloseBt.hideNextBt .ogl-rw-popover-content {
+		background-color: var(--ns-color-rw-bluegreen-primary);
+		color: var(--ns-color-rw-white-1);
+	}
+	
+	div.ogl-rw-widget--launch a:hover {
+		background-color: var(--ns-color-rw-bluegreen-primary-hover) !important;
+	}
+	
+	.rw-theme-searchbar {
+		background-color: var(--ns-color-rw-bluegreen-dark);
+	}
+	
+	div.sttip div.ogl-rw-tip .ogl-rw-popover-title #tooltipStepCounter_,
+	div.sttip div.ogl-rw-tip .ogl-rw-popover-title .steps-count,
+	div.sttip div.ogl-rw-tip .ogl-rw-popover-title .ogl-rw-tip--step-count {
+		color: var(--ns-color-rw-white-1);
+	}	
+	
+	/*** FOOTER COLOR ***/
+	div.sttip div.ogl-rw-tip .stFooter,	
+	div.sttip div.ogl-rw-tip.ogl-rw-hovertip.showLaterBt .stFooter {
+		background-color: var(--ns-color-rw-white-2) !important;
+	}
+	
+	div.sttip div.ogl-rw-tip .stFooter .default-prev-btn {
+		background-color: var(--ns-color-rw-lightblue-1) !important;
+	}
+	
+	div.sttip div.ogl-rw-tip .stFooter .default-prev-btn:hover {
+		background-color: var(--ns-color-rw-lightblue-1-hover) !important;
+	}	
+	 
+	div.sttip div.ogl-rw-tip .stFooter .next-btn {
+		background-color: var(--ns-color-rw-bluegreen-1) !important;
+	}
+	
+	div.sttip div.ogl-rw-tip .stFooter .next-btn:hover {
+		background-color: var(--ns-color-rw-bluegreen-1-hover) !important;
+	}
+	
+	div.sttip div.ogl-rw-tip .next-btn--choice {
+		background-color: var(--ns-color-rw-bluegreen-dark) !important;
+	}
+	
+	div.sttip div.ogl-rw-tip .next-btn--choice:hover {
+		background-color: var(--ns-color-rw-bluegreen-dark-hover) !important;
+	}	
+	/*** FOOTER COLOR ***/
+	
+	/*** TIP - ARROWS - PRIMARY ***/
+	div.sttip div.ogl-rw-tip div.tooltip-arrow:not(.second-arrow) {
+		filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.2));
+	}
+	
+	div.sttip div.ogl-rw-tip.in.top div.tooltip-arrow:not(.second-arrow),
+	div.sttip div.ogl-rw-tip.hideStepsCount.hideCloseBt.hideNextBt.in.top div.tooltip-arrow:not(.second-arrow) {
+		border-top-color: var(--ns-color-rw-white-1) !important;
+	}
+	
+	div.sttip div.ogl-rw-tip.in.right div.tooltip-arrow:not(.second-arrow),
+	div.sttip div.ogl-rw-tip.hideStepsCount.hideCloseBt.hideNextBt.in.right div.tooltip-arrow:not(.second-arrow) {
+		border-right-color: var(--ns-color-rw-white-1) !important;
+	}
+
+	div.sttip div.ogl-rw-tip.in.bottom div.tooltip-arrow:not(.second-arrow),
+	div.sttip div.ogl-rw-tip.hideStepsCount.hideCloseBt.hideNextBt.in.bottom div.tooltip-arrow:not(.second-arrow) {
+		border-bottom-color: var(--ns-color-rw-white-1) !important;
+	}
+
+	div.sttip div.ogl-rw-tip.in.left div.tooltip-arrow:not(.second-arrow),
+	div.sttip div.ogl-rw-tip.hideStepsCount.hideCloseBt.hideNextBt.in.left div.tooltip-arrow:not(.second-arrow) {
+		border-left-color: var(--ns-color-rw-white-1) !important;
+	}
+	
+	div.sttip div.ogl-rw-tip.in.top:not(.ogl-rw-hovertip) div.tooltip-arrow.second-arrow,
+	div.sttip div.ogl-rw-tip.in.top.top-left:not(.ogl-rw-hovertip) div.tooltip-arrow.second-arrow,
+	div.sttip div.ogl-rw-tip.in.top.top-left.hideNextBt:not(.ogl-rw-hovertip) div.tooltip-arrow.second-arrow {
+		border-top-color: var(--ns-color-rw-white-2) !important;
+	}
+	
+	div.sttip div.ogl-rw-tip.in.right:not(.ns-popovercolor-blue-2) div.tooltip-arrow.second-arrow {
+		border-right-color: var(--ns-color-rw-bluegreen-primary) !important;
+	}
+	
+	div.sttip div.ogl-rw-tip.in.bottom:not(.ns-popovercolor-blue-2) div.tooltip-arrow.second-arrow {
+		border-bottom-color: var(--ns-color-rw-bluegreen-primary) !important;
+	}
+	
+	div.sttip div.ogl-rw-tip.in.left:not(.ns-popovercolor-blue-2) div.tooltip-arrow.second-arrow {
+		border-left-color: var(--ns-color-rw-bluegreen-primary) !important;
+	}
+
+	/*** TIP - ARROWS - ALL FOOTER BUTTONS HIDDEN ***/
+	div.sttip div.ogl-rw-tip.hideStepsCount.hideCloseBt.hideNextBt.top.in:not(.ns-popovercolor-blue-2) div.tooltip-arrow.second-arrow,
+	div.sttip div.ogl-rw-tip.hideStepsCount.ogl-rw-hovertip.top.in:not(.ns-popovercolor-blue-2) div.tooltip-arrow.second-arrow {
+		border-top-color: var(--ns-color-rw-bluegreen-primary) !important;
+	}
+
+	div.sttip div.ogl-rw-tip.hideStepsCount.hideCloseBt.hideNextBt.left.in div.tooltip-arrow.second-arrow {
+		border-left-color: var(--ns-color-rw-bluegreen-primary) !important;
+	}
+
+	div.sttip div.ogl-rw-tip.hideStepsCount.hideCloseBt.hideNextBt.right.in div.tooltip-arrow.second-arrow {
+		border-right-color: var(--ns-color-rw-bluegreen-primary) !important;
+	}
+
+	div.sttip div.ogl-rw-tip.hideStepsCount.hideCloseBt.hideNextBt.bottom.in div.tooltip-arrow.second-arrow {
+		border-bottom-color: var(--ns-color-rw-bluegreen-primary) !important;
+	}
+	
+	/********* TIP COLOR RW - END *********/
+	
+	/********* TIP CONTENT - START *********/
+	div.sttip div.ogl-rw-tip.hideStepsCount:not(.ns-popover-scrollbar-container):not(.ns-replaybtn) .ogl-rw-popover-content {
+		padding: 12px 20px 28px !important;
+	}
+	
+	div.sttip div.ogl-rw-tip.hideStepsCount.hideCloseBt.hideNextBt .stFooter {
+		display: none !important;
+	}
+	/********* TIP CONTENT - END *********/
+	
+	/********* FONT UPDATE - START *********/
+	div.sttip div.ogl-rw-tip a,
+    div.sttip div.ogl-rw-tip .ogl-rw-popover-content,
+    div.sttip div.ogl-rw-tip .stFooter,
+    div.sttip .panel-container .guide-content,
+    div.sttip .panel-container .guide-footer {
+        font-family: var(--ns-font-rw-family);
+        font-size: var(--ns-font-rw-size);
+    }
+	
+	div.sttip div.ogl-rw-tip a {
+		color: var(--ns-color-rw-yellow-1);
+		font-size: inherit;
+	}
+	/********* FONT UPDATE - END *********/
+	
+	/********* SMART TIP - START *********/
+	div.ir-marker {
+		background-color: var(--ns-color-rw-bluegreen-1) !important;
+	}
+	
+	div.ir-beacon:before {
+		box-shadow: 0 0 2px 2px var(--ns-color-rw-bluegreen-1);
+	}
+	
+	div.ir-marker-for-inside-animation.ir-animate-beacon:before {
+		box-shadow: 0px 0px 1px 2px var(--ns-color-rw-bluegreen-1);
+	} 
+	
+	div.ir-marker:after {
+		content: 'i' !important;
+		font-family: var(--ns-font-rw-family);
+	}
+	
+	/********* SMART TIP - END *********/
+	
+	/********* UL OL UPDATE - START *********/	
+	div.sttip div.tooltip .ogl-rw-popover-content ol, div.sttip div.tooltip .ogl-rw-popover-content ul{
+		margin-block-start: 0;
+		margin-block-end: 0;
+		padding-top: 5px;
+	}	
+	
+	div.sttip div.tooltip .ogl-rw-popover-content ul li, div.sttip div.tooltip .ogl-rw-popover-content ol li {
+		padding: 3px;
+	}
+	/********* UL OL UPDATE - END *********/
+
+    div.sttip h3,
+    div.sttip h4,
+    div.sttip h5 {
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+		
+	div.sttip div.tooltip .ogl-rw-popover-content .next-btn--choice {
+		padding: 7px 12px;
+	}
+	
+	div.sttip div.ogl-rw-tip .stFooter .next-btn {
+		max-width: none !important;
+	}
+	
+	div.sttip div.tooltip div.ogl-rw-popover-content a[data-iridize-nextscenario*='nextScenario']:not(a.next-btn--choice) {
+		background: url('../../../../../nlcorp.app.netsuite.com/core/media/media.nl');
+		background-repeat: no-repeat;
+		background-color: transparent;
+		background-position: right;
+		background-size: 14px;
+		padding-right: 15px;
+	}
+	
+	/********* SURVEY UI UPDATE - START *********/	
+	div.sttip .ogl-survey-question, div.sttip .ogl-survey-option-text, div.sttip .ogl-survey-rating-text {
+		color: var(--ns-color-rw-white-1);
+		font-family: var(--ns-font-rw-family);		
+	}
+	
+	div.sttip div.tooltip .ogl-survey-link-container a {
+		color: var(--ns-color-rw-yellow-1);
+		font-family: var(--ns-font-rw-family);		
+	}
+	
+	div.sttip .ogl-survey-question {
+		font-size: 22px;
+		font-weight: 600;
+		line-height: 28px;
+	}
+	/********* SURVEY UI UPDATE - END *********/		
+	
+		
+	/* ----------------------------------------------------- */
+	/* ----------------------------------------------------- */
+	/* ------------------------NSGL------------------------- */
+	/* --------- UPDATED IRIDIZE BASE KIT CSS - END -------- */
+	/* ----------------------------------------------------- */
+	/* ----------------------------------------------------- */
+	/* ----------------------------------------------------- */
+	
+	/* ----------------------------------------------------- */
+	/* ----------------------------------------------------- */
+	/* ------------------------NSGL------------------------- */
+	/* ----------- UPDATED NETSUITE CSS - START ------------ */
+	/* ----------------------------------------------------- */
+	/* ----------------------------------------------------- */
+	/* ----------------------------------------------------- */
+	
+	/********* FIX FOR OGL AUTO SCROLL NOT WORKING FOR TABS *********/
+	/*table.bgtabbar { 
+		overflow-x: visible !important; 
+	}*/
+	
+	/* ----------------------------------------------------- */
+	/* ----------------------------------------------------- */
+	/* ------------------------NSGL------------------------- */
+	/* ----------- UPDATED NETSUITE CSS - END ------------ */
+	/* ----------------------------------------------------- */
+	/* ----------------------------------------------------- */
+	/* ----------------------------------------------------- */
+	
+	/* ----------------------------------------------------- */
+	/* ----------------------------------------------------- */
+	/* ------------------------NSGL------------------------- */
+	/* --------- CUSTOM CLASSES USED IN OGL - START ---------*/
+	/* ----------------------------------------------------- */
+	/* ----------------------------------------------------- */
+	/* ----------------------------------------------------- */			
+	/********* CUSTOM Z-INDEX - START *********/
+	div.tooltip.ns-tip-zindex-top {
+		z-index: 999999999 !important;
+	}
+	
+	div.tooltip.ns-tip-zindex-1002,
+	div.ir-marker.ns-tip-zindex-1002 {
+		z-index: 1002;
+	}
+	
+	div.tooltip.ns-tip-zindex-1001,
+	div.ir-marker.ns-tip-zindex-1001 {
+		z-index: 1001;
+	}
+	
+	div.tooltip.ns-tip-zindex-999,
+	div.ir-marker.ns-tip-zindex-999 {
+		z-index: 999;
+	}	
+	
+	div.tooltip.ns-tip-zindex-998,
+	div.ir-marker.ns-tip-zindex-998 {
+		z-index: 998;
+	}
+	
+	div.tooltip.ns-tip-zindex-997,
+	div.ir-marker.ns-tip-zindex-997 {
+		z-index: 997;
+	}
+	
+	div.tooltip.ns-tip-zindex-899,
+	div.ir-marker.ns-tip-zindex-899 {
+		z-index: 899;
+	}
+	
+	div.ir-marker.ns-marker-tip-zindex-1002 {
+		z-index: 1002;
+	}
+	
+	div.ir-marker.ns-marker-tip-zindex-1001 {
+		z-index: 1001;
+	}
+	
+	div.ir-marker.ns-marker-tip-zindex-1000 {
+		z-index: 1000;
+	}
+	
+	div.ir-marker.ns-marker-tip-zindex-999 {
+		z-index: 999;
+	}
+	/********* CUSTOM Z-INDEX - END *********/
+	
+	/********* CUSTOM ICONS - START *********/
+	/*** INTRODUCTION STEP - TITLE UNDERLINE DESIGN - START ***/
+	div.sttip div.tooltip .ogl-rw-popover-content .dash-sunrise {
+		font-weight: 500 !important;
+	}
+	
+	div.sttip div.tooltip .ogl-rw-popover-content .dash-sunrise:after {
+		content: '';
+		display: block;
+		width: 40px;
+		height: 4px;
+		margin: .6em 0 .6em;
+		background-color: var(--ns-color-rw-bluegreen-light);
+	}
+	/*** INTRODUCTION STEP - TITLE UNDERLINE DESIGN - END  ***/
+	
+	/*** UNORDERED LIST - LIST LAUNCH SINGLE - START***/
+	div.sttip div.tooltip .ogl-rw-popover-content .list-launch-single:before {
+		margin-left: 0;
+		margin-right: 5px;
+		font-family: "FontAwesome";
+		font-weight: 300;
+		content: "\1F865" !important;
+		background: #4eb5a3;
+		border-radius: 100%;
+		color: var(--ns-white-1);
+		width: 1em;
+		text-align: center;
+		display: inline-block;
+		padding: 5px;
+		height: 1em;
+		line-height: 1em;
+		vertical-align: middle;
+		text-decoration: none;
+	}
+
+	div.sttip div.tooltip .ogl-rw-popover-content .list-launch-single a:link {
+		text-decoration: none;
+	}
+
+	div.sttip div.tooltip .ogl-rw-popover-content .list-launch-single a:hover {
+		text-decoration: underline;
+	}
+	/*** UNORDERED LIST - LIST LAUNCH SINGLE - END***/
+	
+	/*** UNORDERED LIST - LIST LAUNCH - START ***/
+	ul.list-unordered,
+	ol.list-unordered {
+		list-style: none;
+	}
+
+	ul.list-unordered li,
+	ol.list-unordered li {
+		list-style: none;
+		background-image: url('../../../../../nlcorp.app.netsuite.com/core/media/media.nl');
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: 15px 15px;
+		height: 1.2em;
+		line-height: 1.2em;
+		margin-left: 0;
+		padding-left: 22px!important;
+		margin-top: 4px;
+		margin-bottom: 4px;
+		border-radius: 99px;
+		display: inline-block;
+		vertical-align: center;
+	}
+
+	ul.list-unordered li a:link,
+	ol.list-unordered li a:link {
+		text-decoration: none;
+	}
+
+	ul.list-launch li a:hover,
+	ol.list-unordered li a:hover {
+		text-decoration: underline;
+	}
+
+	ul.list-launch-2 {
+		list-style: none;
+	}
+
+	ul.list-launch-2 > li {
+		list-style: none;
+		background-image: url('../../../../../nlcorp.app.netsuite.com/core/media/media.nl');
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: 23px 23px;
+		height: 1.1em;
+		margin-left: 4px;
+		padding-left: 35px!important;
+		margin-top: 7px;
+		margin-bottom: 7px;
+		border-radius: 99px;
+	}
+
+	ul.list-launch-2 > li:hover {
+		background-color: rgba(0, 0, 0, 0.1);
+		border-radius: 99px;
+	}
+
+	ul.list-launch {
+		list-style: none;
+		padding-top: 10px!important;
+	}
+	
+	ul.list-launch > li, ol.list-launch>li {
+		padding: 5px!important;
+		margin-bottom: 10px!important;
+	}
+
+	ul.list-launch > li {
+		list-style: none;
+		background-image: url('../../../../../nlcorp.app.netsuite.com/core/media/media.nl'); /* list-launch.png */
+		background-position: top left;
+		background-repeat: no-repeat;
+		background-size: 26px 26px;
+		padding-left: 38px!important;
+	}
+
+	ul.list-launch > li:hover {
+		background-color: rgba(0, 0, 0, 0.1);
+		border-radius: 15px;
+	}
+	
+	ul.list-launch-2 > li a:link,
+	ul.list-launch-2 > li a:hover,
+	ul.list-launch > li a:link,
+	ul.list-launch > li a:hover {
+		text-decoration: none;
+	}
+
+	ol.list-ordered {
+		counter-reset: ss-counter;
+		list-style: none;
+		padding-left: 40px!important;
+	}
+
+	ol.list-ordered li {
+		margin: 0 0 0.5rem 0;
+		list-style: none;
+		counter-increment: ss-counter;
+		position: relative;
+	}
+
+	ol.list-ordered li::before {
+		content: counter(ss-counter);
+		color: #333;
+		font-size: 1rem;
+		font-weight: bold;
+		position: absolute;
+		--size: 30px;
+		left: calc(-1 * var(--size) - 0px);
+		line-height: var(--size);
+		width: var(--size);
+		height: var(--size);
+		top: 0;
+		background: #e5dbbe;
+		border-radius: 50%;
+		text-align: center;
+	}
+	/*** UNORDERED LIST - LIST LAUNCH - END ***/
+	
+	/*** ALL PARAGRAPH ICONS - START ***/
+	div.sttip div.tooltip .ogl-rw-popover-content .noteicon,
+	div.sttip div.tooltip .ogl-rw-popover-content .warningicon,
+	div.sttip div.tooltip .ogl-rw-popover-content .besticon,
+	div.sttip div.tooltip .ogl-rw-popover-content .tipicon, 
+	div.sttip div.tooltip .ogl-rw-popover-content .infoicon,
+	div.sttip div.tooltip .ogl-rw-popover-content .questionicon	{
+		background-position: top left;
+		background-repeat: no-repeat;
+		padding-left: 40px;
+		min-height: 32px !important;
+		padding-top: 5px;
+		/*font-style: italic;*/
+	}
+	
+	div.sttip div.tooltip .ogl-rw-popover-content .noteicon {
+		background-image: url('../../../../../nlcorp.app.netsuite.com/core/media/media.nl');		
+	}
+
+	div.sttip div.tooltip .ogl-rw-popover-content .warningicon {
+		background-image: url('../../../../../nlcorp.app.netsuite.com/core/media/media.nl');
+	}
+
+	div.sttip div.tooltip .ogl-rw-popover-content .besticon {
+		background-image: url('../../../../../nlcorp.app.netsuite.com/core/media/media.nl');
+	}	
+
+	div.sttip div.tooltip .ogl-rw-popover-content .tipicon {
+		background-image: url('../../../../../nlcorp.app.netsuite.com/core/media/media.nl');
+	}
+
+	div.sttip div.tooltip .ogl-rw-popover-content .checkicon {
+		background-image: url('../../../../../nlcorp.app.netsuite.com/core/media/media.nl');
+		background-position: top left;
+		background-repeat: no-repeat;
+		background-size: 40px 40px;
+		padding-left: 50px;
+		height: 40px;
+		line-height: 40px;
+		margin-bottom: 15px;
+		font-weight: 500!important;
+	}
+
+	div.sttip div.tooltip .ogl-rw-popover-content .alerticon {
+		background-image: url('../../../../../nlcorp.app.netsuite.com/core/media/media.nl');
+		background-position: top left;
+		background-repeat: no-repeat;
+		background-size: 50px 50px;
+		padding-left: 60px;
+		height: 50px;
+		line-height: 50px;
+		margin-bottom: 20px;
+		font-weight: 500!important;
+		/*background-size: 42px 42px;
+		padding-left: 50px;
+		height: 42px;
+		line-height: 42px;
+		margin-bottom: 20px;*/
+	}
+
+	div.sttip div.tooltip .ogl-rw-popover-content .infoicon {
+		background-image: url('../../../../../nlcorp.app.netsuite.com/core/media/media.nl');
+	}
+
+	div.sttip div.tooltip .ogl-rw-popover-content .questionicon {
+		background-image: url('../../../../../nlcorp.app.netsuite.com/core/media/media.nl');
+	}
+
+	/*** ALL PARAGRAPH ICONS - END ***/
+	/********* CUSTOM ICONS - END *********/
+	
+	/********* CUSTOM SCROLLBAR - START *********/
+	/*** width ***/
+	div.sttip div.tooltip .ogl-rw-popover-content::-webkit-scrollbar,
+	div.sttip div.tooltip div.ns-scrollbar::-webkit-scrollbar {
+		width: 9px;
+		height: 9px;
+	}
+
+	/*** Track ***/
+	/*div.sttip div.tooltip div.ns-scrollbar::-webkit-scrollbar-track {
+		background: #f1f1f1;
+		border-radius: 10px;
+	}*/
+
+	/*** Handle ***/
+	div.sttip div.tooltip .ogl-rw-popover-content::-webkit-scrollbar-thumb,
+	div.sttip div.tooltip div.ns-scrollbar::-webkit-scrollbar-thumb {
+		background-color: var(--ns-color-rw-lightblue-1);
+		border-radius: 10px;
+	}
+
+	/*** Handle on hover ***/
+	/*div.sttip div.tooltip div.ns-scrollbar::-webkit-scrollbar-thumb:hover {
+		background: #5b7093;
+		border-radius: 10px;
+	}*/
+	
+	/*** Custom for scrollbar content ***/	
+	div.sttip div.tooltip div.ns-scrollbar-main-container {
+		display: flex; 
+		flex-direction: column; 
+		max-height: calc(100vh - 300px);
+	}
+	
+	div.sttip div.tooltip div.ns-scrollbar-content-container {
+		/*height: 100%!important;
+		max-height: 620px!important;
+		overflow-y: auto;*/		
+		height: 540px; 
+		overflow-y: auto; 
+		padding-right: 10px !important;
+		margin-top: 5px !important;
+	}
+	
+	div.tooltip.ns-popover-scrollbar-container .ogl-rw-popover-content {
+		margin: 0 12px 10px 0 !important;
+		padding: 12px 0 18px 25px !important;
+	}
+	
+	div.tooltip.ns-popover-scrollbar-container .ogl-rw-popover-content div[data-iridize-id="content"] {
+		width: 100%;
+	}
+	/********* CUSTOM SCROLLBAR - END *********/
+	
+	/********* CUSTOM BUTTONS - START *********/	
+	/*** NEXT OR OPTIONAL BUTTON CHOICE - ALIGNING TO NEXT AND BACK BUTTONS - START ***/
+	div.sttip div.tooltip.top.ns-nextbtnchoice-align .ogl-rw-popover-content .next-btn--choice {
+		position: absolute !important;
+		left: 14px;
+		bottom: 28px;
+	}
+
+	div.sttip div.tooltip.right.ns-nextbtnchoice-align .ogl-rw-popover-content .next-btn--choice {
+		position: absolute !important;
+		left: 32px;
+		bottom: 12px;
+	}
+
+	div.sttip div.tooltip.bottom.ns-nextbtnchoice-align .ogl-rw-popover-content .next-btn--choice,
+	div.sttip div.tooltip.ns-nextbtnchoice-align .ogl-rw-popover-content .next-btn--choice {
+		position: absolute !important;
+		left: 14px;
+		bottom: 12px;
+	}
+	/*** NEXT OR OPTIONAL BUTTON CHOICE - ALIGNING TO NEXT AND BACK BUTTONS - END ***/
+	
+	/*** REPLAY BUTTON - START ***/
+	div.sttip div.tooltip.ns-replaybtn .ogl-rw-popover-content {
+		padding: 16px 20px 22px !important;
+	}
+	
+	div.sttip div.tooltip.ns-replaybtn .ogl-rw-popover-content > div > div:last-child {
+		text-align: center;
+	}
+	
+	div.sttip div.tooltip.ns-replaybtn .ogl-rw-popover-content .next-btn--choice {
+		background-position: 5px 3px;
+		background-repeat: no-repeat;
+		min-height: 30px;
+		margin-top: 15px;
+		padding: 9px 8px 0 35px;
+		background-size: 30px;
+		background-image: url('../../../../../nlcorp.app.netsuite.com/core/media/media.nl');		
+	}
+	/*** REPLAY BUTTON - END ***/
+	/********* CUSTOM BUTTONS - END *********/
+	
+	/********* CUSTOM SMART TIPS - START *********/
+	/*** CHANGING HELP ICON TIPS "i" to NUMBERS ***/
+	div.ir-marker.ns-marker-txt-1,div.ir-marker.ns-marker-txt-2,div.ir-marker.ns-marker-txt-3,div.ir-marker.ns-marker-txt-4,div.ir-marker.ns-marker-txt-5,div.ir-marker.ns-marker-txt-6,
+	div.ir-marker.ns-marker-txt-qmark,div.ir-marker.ns-marker-txt-special {
+		font-family: var(--ns-font-rw-family);
+		font-size: 14px;
+	}
+	
+	div.ir-marker.ns-marker-txt-1:after {
+		content: '1' !important;		
+	}
+
+	div.ir-marker.ns-marker-txt-2:after {
+		content: '2'!important;
+	}
+
+	div.ir-marker.ns-marker-txt-3:after {
+		content: '3'!important;
+	}
+
+	div.ir-marker.ns-marker-txt-4:after {
+		content: '4'!important;
+	}
+
+	div.ir-marker.ns-marker-txt-5:after {
+		content: '5'!important;
+	}
+
+	div.ir-marker.ns-marker-txt-6:after {
+		content: '6'!important;
+	}
+	
+	/*** CHANGING HELP ICON TIPS to "?" ***/
+	div.ir-marker.ns-marker-txt-qmark:after {
+		content: '?' !important;
+	}
+	
+	/*** SPECIAL ICON TIP - USED AT THE TOP OF OGL WIDGET ***/
+	div.ir-marker.ns-marker-txt-special:after {
+		content: '?' !important;
+	}
+	
+	div.ir-marker.ns-marker-txt-special:before {
+		content: ' ' !important;
+		position: absolute;
+		bottom: 0;
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-top: 10px solid transparent;
+		border-top-color: var(--ns-color-rw-bluegreen-1);
+		margin-left: -8px;
+		margin-bottom: -6px;
+	}
+	
+	div.ir-marker.ns-marker-txt-special {
+		animation: MoveUpDownSmall 1s linear infinite;
+	}	
+	
+	/*.video-js .vjs-dock-text {
+	  display: none;
+	}*/
+	/*** NEW BEACON COLOR ***/	
+	/* BEACON GREEN */
+	div.ir-beacon.ns-beacon-green:before {
+		box-shadow: 0 0 1px 2px #12bc8d;
+	}
+	
+	div.ir-marker.ns-beacon-green div.ir-marker-for-inside-animation.ir-animate-beacon:before {
+		box-shadow: 0 0 1px 2px #12bc8d;
+	}
+	
+	/* BEACON RED - ORIGINAL */
+	div.ir-beacon.ns-beacon-red:before {
+		box-shadow: 0 0 1px 2px #ff0000;
+	}
+	
+	div.ir-marker.ns-beacon-red div.ir-marker-for-inside-animation.ir-animate-beacon:before {
+		box-shadow: 0 0 1px 2px #ff0000;
+	}
+	
+	div.ir-marker.ns-beacon-green div.ir-beacon.ns-beacon-red{
+		background-color: transparent !important;
+	}	
+	
+	div.ir-marker.ns-beacon-green:after div.ir-marker.ns-beacon-red:after{
+		content: '' !important;
+	}
+	
+	/*** SMART TIP - HIDE ***/
+	div.ir-marker.ns-smarttip-hide {
+		background-color: transparent !important;
+	}
+	
+	div.ir-marker.ns-smarttip-hide:after {
+		content: '' !important;
+	}
+	
+	div.ir-marker.ns-smarttip-remove {
+		display: none;
+	}
+	
+	/*** SMART TIP - BG COLOR - BLUEGREEN PRIMARY ***/
+	div.ir-marker.ns-smarttip-bgcolor-1 {
+		background-color: var(--ns-color-rw-bluegreen-primary) !important;
+	}
+	div.ir-marker.ns-smarttip-bgcolor-2 {
+		background-color: var(--ns-color-rw-bluegreen-1-hover) !important;
+	}
+	
+	/*** SMART TIP - TRANSPARENT ***/
+	div.ir-marker.ns-smarttip-style-transparent {
+		background-color: #FFF !important;
+		border: 1px solid var(--ns-color-rw-bluegreen-primary);
+		width: 18px;
+		height: 18px;
+		line-height: 15px;
+		color: var(--ns-color-rw-bluegreen-primary);
+		font-size: 12px;
+		animation: smarttip-zoom-in 0.5s ease;
+	}
+	
+	/*** SMART TIP - ANIMATIONS ***/
+	div.ir-marker.ns-smarttip-animate-zoomin {
+		animation: smarttip-zoom-in 0.5s ease;
+	}
+	
+	@keyframes MoveUpDownSmall {
+	  0%, 100% {
+		transform: translateY(0);
+	  }
+	  50% {
+		transform: translateY(-2px);
+	  }
+	}
+	
+	@keyframes smarttip-zoom-in {
+	  0% {
+		scale: 0%
+	  }
+	  100% {
+		scale: 100%;
+	  }
+	}	
+	/********* CUSTOM SMART TIPS - END *********/
+	
+	/********* CUSTOM TIP - START *********/
+	/*** MOVING TIP ARROW TO CORNERS ***/
+	/* FIX FOR NS-TOOLTIP-CORNER INDEX SET BEHIND NEXT AND CLOSE BUTTON */
+	div.tooltip.top-left.ns-tooltip-corner .next-btn,
+	div.tooltip.top-right.ns-tooltip-corner .close-btn {
+		z-index: 999;
+	}
+	/* FIX FOR NS-TOOLTIP-CORNER INDEX SET BEHIND NEXT AND CLOSE BUTTON */
+		
+	div.tooltip.bottom-right.ns-tooltip-corner div.tooltip-arrow {
+		transform: rotate(-45deg);
+		margin-top: 4px !important;		
+		border-bottom: 40px solid var(--ns-color-rw-white-1) !important;
+		left: 4px !important;
+	}	
+	
+	div.tooltip.bottom-right.ns-tooltip-corner:not(.hideStepsCount.hideCloseBt.hideNextBt) div.tooltip-arrow.second-arrow {		
+		border-bottom: 35px solid var(--ns-color-rw-bluegreen-primary) !important;
+		left: 2px !important;
+	}
+	
+	div.tooltip.bottom-right.ns-tooltip-corner.hideStepsCount.hideCloseBt.hideNextBt div.tooltip-arrow.second-arrow {		
+		border-bottom: 35px solid var(--ns-color-rw-bluegreen-secondary) !important;
+		left: 2px !important;
+	}
+	
+	div.tooltip.bottom-left.ns-tooltip-corner div.tooltip-arrow {
+		transform: rotate(45deg);
+		margin-top: 4px !important;		
+		border-bottom: 40px solid var(--ns-color-rw-white-1) !important;
+		left: auto !important;
+		right: -15px;
+	}
+
+	div.tooltip.bottom-left.ns-tooltip-corner:not(.hideStepsCount.hideCloseBt.hideNextBt) div.tooltip-arrow.second-arrow {
+		border-bottom: 35px solid var(--ns-color-rw-bluegreen-primary) !important;
+		right: -13px;
+	}	
+	
+	div.tooltip.bottom-left.ns-tooltip-corner.hideStepsCount.hideCloseBt.hideNextBt div.tooltip-arrow.second-arrow {
+		border-bottom: 35px solid var(--ns-color-rw-bluegreen-secondary) !important;
+		right: -13px;
+	}
+	
+	div.tooltip.top-right.ns-tooltip-corner div.tooltip-arrow {
+		transform: rotate(45deg);
+		margin-bottom: 4px !important;		
+		border-top: 40px solid var(--ns-color-rw-white-1) !important;
+		left: 4px !important
+	}
+
+	/*div.tooltip.top-right.ns-tooltip-corner:not(.hideStepsCount.hideCloseBt.hideNextBt) div.tooltip-arrow.second-arrow {		
+		border-top: 35px solid var(--ns-color-rw-bluegreen-primary) !important;
+		left: 2px !important;
+	}*/
+	
+	div.tooltip.top-right.ns-tooltip-corner.ogl-rw-hovertip div.tooltip-arrow.second-arrow {		
+		border-top: 35px solid var(--ns-color-rw-bluegreen-primary) !important;
+		left: 2px !important;
+	}
+	
+	div.tooltip.top-right.ns-tooltip-corner div.tooltip-arrow.second-arrow {		
+		border-top: 35px solid var(--ns-color-rw-lightblue-1) !important;
+		left: 2px !important;
+	}
+	
+	div.tooltip.top-left.ns-tooltip-corner div.tooltip-arrow {
+		transform: rotate(-45deg);
+		margin-bottom: 4px !important;		
+		border-top: 40px solid var(--ns-color-rw-white-1) !important;
+		left: auto !important;
+		right: -15px;
+	}
+
+	/*div.tooltip.top-left.ns-tooltip-corner:not(.hideStepsCount.hideCloseBt.hideNextBt) div.tooltip-arrow.second-arrow {
+		border-top: 35px solid var(--ns-color-rw-lightblue-1) !important;
+		right: -13px;
+	}
+	
+	div.tooltip.top-left.ns-tooltip-corner.hideStepsCount.hideCloseBt.hideNextBt div.tooltip-arrow.second-arrow {
+		border-top: 35px solid var(--ns-color-rw-lightblue-1) !important;
+		right: -13px;
+	}*/
+	
+	div.tooltip.top-left.ns-tooltip-corner div.tooltip-arrow.second-arrow {
+		border-top: 35px solid var(--ns-color-rw-lightblue-1) !important;
+		right: -13px;
+	}
+	
+	/*div.tooltip.bottom-right.ns-tooltip-corner.ns-popovercolor-blue-2:not(.hideStepsCount.hideCloseBt.hideNextBt) div.tooltip-arrow.second-arrow {		
+		border-bottom: 35px solid var(--ns-color-rw-bluegreen-primary) !important;
+		left: 2px !important;
+	}
+	
+	div.tooltip.bottom-left.ns-tooltip-corner.ns-popovercolor-blue-2:not(.hideStepsCount.hideCloseBt.hideNextBt) div.tooltip-arrow.second-arrow {
+		border-bottom: 35px solid var(--ns-color-rw-bluegreen-primary) !important;
+		right: -13px;
+	}
+	
+	div.tooltip.top-right.ns-tooltip-corner.ns-popovercolor-blue-2:not(.hideStepsCount.hideCloseBt.hideNextBt) div.tooltip-arrow.second-arrow {		
+		border-top: 35px solid var(--ns-color-rw-lightblue-1) !important;
+		left: 2px !important;
+	}
+	
+	div.tooltip.top-left.ns-tooltip-corner.ns-popovercolor-blue-2:not(.hideStepsCount.hideCloseBt.hideNextBt) div.tooltip-arrow.second-arrow {
+		border-top: 35px solid var(--ns-color-rw-lightblue-1) !important;
+		right: -13px;
+	}*/			
+	
+	/*** MOVING TIP ARROW TO LEFT-TOP-RIGHT-BOTTOM - MAINLY USED FOR STEP NS NAV ***/
+	/* 1 LINE - TIP OFFSET: TOP -25 */
+	div.tooltip.left.ns-tooltip-bottom-1 div.tooltip-arrow,
+	div.tooltip.right.ns-tooltip-bottom-1 div.tooltip-arrow {
+		margin-top: 11px !important;
+	}
+
+	div.tooltip.left.ns-tooltip-bottom-1 div.tooltip-arrow.second-arrow,
+	div.tooltip.right.ns-tooltip-bottom-1 div.tooltip-arrow.second-arrow {
+		margin-top: 15px !important;
+	}
+	/* 2 LINES - TIP OFFSET: TOP -15 */
+	div.tooltip.left.ns-tooltip-bottom-2 div.tooltip-arrow,
+	div.tooltip.right.ns-tooltip-bottom-2 div.tooltip-arrow {
+		margin-top: 8px !important;
+	}
+
+	div.tooltip.left.ns-tooltip-bottom-2 div.tooltip-arrow.second-arrow,
+	div.tooltip.right.ns-tooltip-bottom-2 div.tooltip-arrow.second-arrow {
+		margin-top: 12px !important;
+	}
+	
+	div.tooltip.left.ns-tooltip-bottom-2 div.popover-title,
+	div.tooltip.right.ns-tooltip-bottom-2 div.popover-title{
+		height: 18px !important;
+	}
+	
+	div.tooltip.left.ns-tooltip-bottom-2 .ogl-rw-popover-content > div:first-child,
+	div.tooltip.left.ns-tooltip-bottom-2 .ogl-rw-popover-content > div:first-child{
+		padding-bottom: 8px !important;
+	}
+	
+	div.tooltip.left.ns-tooltip-bottom-2 .stFooter,
+	div.tooltip.right.ns-tooltip-bottom-2 .stFooter{
+		line-height: 23px !important;
+	}
+	
+	/*** MOVING TIP ARROW TO TOP AND BOTTOM ***/
+	div.tooltip.right.ns-tooltip-arrow-top div.tooltip-arrow,
+	div.tooltip.left.ns-tooltip-arrow-top div.tooltip-arrow {
+		top: 0 !important;
+		margin-top: 1px !important;
+	}
+	
+	div.tooltip.right.ns-tooltip-arrow-top div.tooltip-arrow.second-arrow,
+	div.tooltip.left.ns-tooltip-arrow-top div.tooltip-arrow.second-arrow {
+		margin-top: 5px !important;
+	}
+		
+	div.tooltip.right.ns-tooltip-arrow-bottom div.tooltip-arrow,
+	div.tooltip.left.ns-tooltip-arrow-bottom div.tooltip-arrow {
+		top: 100% !important;
+		margin-top: -35px !important;
+	}
+	
+	div.tooltip.right.ns-tooltip-arrow-bottom div.tooltip-arrow.second-arrow,
+	div.tooltip.left.ns-tooltip-arrow-bottom div.tooltip-arrow.second-arrow {
+		margin-top: -31px !important;
+	}
+	
+	div.tooltip.right.ns-tooltip-arrow-mid-top div.tooltip-arrow,
+	div.tooltip.left.ns-tooltip-arrow-mid-top div.tooltip-arrow {
+		top: 30% !important;
+	}
+	
+	div.tooltip.right.ns-tooltip-arrow-mid-bottom div.tooltip-arrow,
+	div.tooltip.left.ns-tooltip-arrow-mid-bottom div.tooltip-arrow {
+		top: 70% !important;
+	}
+	
+	/*** TIP ARROWS - DECREASE SIZE ***/
+	div.tooltip.top.ns-tooltip-arrow-small div.tooltip-arrow {
+		bottom: 8px !important;
+		border-top: 13px solid !important;
+	}
+	
+	div.tooltip.top.ns-tooltip-arrow-small div.tooltip-arrow.second-arrow {
+		bottom: 9px !important;
+		border-top: 10px solid !important;
+	}
+	
+	div.tooltip.bottom.ns-tooltip-arrow-small div.tooltip-arrow {
+		top: 8px !important;
+		border-bottom: 13px solid !important;
+	}
+	
+	div.tooltip.bottom.ns-tooltip-arrow-small div.tooltip-arrow.second-arrow {
+		top: 9px !important;
+		border-bottom: 10px solid !important;
+	}
+	
+	div.tooltip.left.ns-tooltip-arrow-small div.tooltip-arrow {
+		right: 8px !important;
+		border-left: 13px solid !important;
+	}
+	
+	div.tooltip.left.ns-tooltip-arrow-small div.tooltip-arrow.second-arrow {
+		right: 9px !important;
+		border-left: 10px solid !important;
+	}
+	
+	div.tooltip.right.ns-tooltip-arrow-small div.tooltip-arrow {
+		left: 8px !important;
+		border-right: 13px solid !important;
+	}
+	
+	div.tooltip.right.ns-tooltip-arrow-small div.tooltip-arrow.second-arrow {
+		left: 9px !important;
+		border-right: 10px solid !important;
+	}
+	
+	/*** FORCING TIP TO LEFT OR RIGHT ***/
+	/* TIP OFFSET WILL NOT BE ADJUSTABLE ONCE APPLIED where 0 = 0px | 60 = 60px | 100 = 100px */
+	div.tooltip.top.ns-tooltip-align-forceleft-0,
+	div.tooltip.bottom.ns-tooltip-align-forceleft-0 {
+		left: auto !important;
+	}
+	
+	div.tooltip.top.ns-tooltip-align-forceleft-60,
+	div.tooltip.bottom.ns-tooltip-align-forceleft-60 {
+		left: 60px !important;
+	}
+	
+	div.tooltip.top.ns-tooltip-align-forceleft-100,
+	div.tooltip.bottom.ns-tooltip-align-forceleft-100 {
+		left: 100px !important;
+	}
+	
+	div.tooltip.top-left.ns-tooltip-align-forceright-0,
+	div.tooltip.bottom-left.ns-tooltip-align-forceright-0 {
+		left: auto !important;
+		right: 0 !important;
+	}
+	
+	div.tooltip.top-left.ns-tooltip-align-forceright-60,
+	div.tooltip.bottom-left.ns-tooltip-align-forceright-60 {
+		left: auto !important;
+		right: 60px !important;
+	}
+	
+	div.tooltip.top-left.ns-tooltip-align-forceright-100,
+	div.tooltip.bottom-left.ns-tooltip-align-forceright-100 {
+		left: auto !important;
+		right: 100px !important;
+	}
+	
+	/*** HIDING popover-inner ***/
+	div.tooltip.ns-popover-inner-hide div.popover-inner,
+	div.tooltip.ns-popover-inner-hide div.tooltip-arrow{
+		display: none !important;
+	}
+	
+	/*** CHANGE popover-inner BACKGROUND COLOR TO OTHER COLORS ***/
+	/* --- COLOR BLUE 1 --- */
+	div.tooltip.ns-popovercolor-blue-1 div.ogl-rw-popover-content,
+	div.tooltip.inside.ns-popovercolor-blue-1 div.ogl-rw-popover-content {
+		background-color: var(--ns-color-rw-bluegreen-primary) !important;		
+	}
+	
+	div.tooltip.top.ns-popovercolor-blue-1 div.tooltip-arrow.second-arrow {
+		border-top-color: var(--ns-color-rw-bluegreen-primary) !important;
+	}
+	
+	div.tooltip.right.ns-popovercolor-blue-1 div.tooltip-arrow.second-arrow {
+		border-right-color: var(--ns-color-rw-bluegreen-primary) !important;
+	}
+	
+	div.tooltip.bottom.ns-popovercolor-blue-1 div.tooltip-arrow.second-arrow {
+		border-bottom-color: var(--ns-color-rw-bluegreen-primary) !important;
+	}
+	
+	div.tooltip.left.ns-popovercolor-blue-1 div.tooltip-arrow.second-arrow {
+		border-left-color: var(--ns-color-rw-bluegreen-primary) !important;
+	}
+	
+	div.tooltip.bottom-right.ns-tooltip-corner.ns-popovercolor-blue-1 div.tooltip-arrow.second-arrow,
+	div.tooltip.bottom-left.ns-tooltip-corner.ns-popovercolor-blue-1 div.tooltip-arrow.second-arrow {
+		border-bottom: 35px solid var(--ns-color-rw-bluegreen-primary) !important;
+	}
+	
+	div.tooltip.top-right.ns-tooltip-corner.ns-popovercolor-blue-1 div.tooltip-arrow.second-arrow,
+	div.tooltip.top-left.ns-tooltip-corner.ns-popovercolor-blue-1 div.tooltip-arrow.second-arrow {
+		border-top: 35px solid var(--ns-color-rw-bluegreen-primary) !important;
+	}
+	
+	/*** --- COLOR BLUE 2 --- ***/
+	div.tooltip.ns-popovercolor-blue-2 div.ogl-rw-popover-content,
+	div.tooltip.ns-popovercolor-blue-2 div.dragger-tip-container,
+	div.tooltip.inside.ns-popovercolor-blue-2 div.ogl-rw-popover-content {
+		background-color: var(--ns-color-rw-bluegreen-secondary) !important;		
+	}
+	
+	div.tooltip.top.ns-popovercolor-blue-2 div.tooltip-arrow.second-arrow {
+		border-top-color: var(--ns-color-rw-bluegreen-secondary) !important;
+	}
+	
+	div.tooltip.right.ns-popovercolor-blue-2 div.tooltip-arrow.second-arrow {
+		border-right-color: var(--ns-color-rw-bluegreen-secondary) !important;
+	}
+	
+	div.tooltip.bottom.ns-popovercolor-blue-2 div.tooltip-arrow.second-arrow {
+		border-bottom-color: var(--ns-color-rw-bluegreen-secondary) !important;
+	}
+	
+	div.tooltip.left.ns-popovercolor-blue-2 div.tooltip-arrow.second-arrow {
+		border-left-color: var(--ns-color-rw-bluegreen-secondary) !important;
+	}
+	
+	div.tooltip.bottom-right.ns-tooltip-corner.ns-popovercolor-blue-2 div.tooltip-arrow.second-arrow,
+	div.tooltip.bottom-left.ns-tooltip-corner.ns-popovercolor-blue-2 div.tooltip-arrow.second-arrow {
+		border-bottom: 35px solid var(--ns-color-rw-bluegreen-secondary) !important;
+	}
+	
+	div.tooltip.top-right.ns-tooltip-corner.ns-popovercolor-blue-2 div.tooltip-arrow.second-arrow,
+	div.tooltip.top-left.ns-tooltip-corner.ns-popovercolor-blue-2 div.tooltip-arrow.second-arrow {
+		border-top: 35px solid var(--ns-color-rw-bluegreen-secondary) !important;
+	}
+	
+	/*** FORCE SUP AND SUB ***/
+	div.sttip div.tooltip.ns-force-subsup sub, div.sttip .ns-force-subsup sup {
+		font-size: 75%;
+		line-height: 0;
+		position: relative;
+		vertical-align: baseline;
+	}
+	div.sttip div.tooltip.ns-force-subsup sup {
+		top: -0.5em;
+	}
+	div.sttip div.tooltip.ns-force-subsup sub {
+		bottom: -0.25em;
+	}
+	
+	/*** TABLE STYLE - USED IN SALES ENABLEMENT ***/
+	div.tooltip table.ns-table-grey, div.tooltip table.ns-table-brown {
+		table-layout: fixed;
+	}
+	div.tooltip table.ns-table-grey td, table.ns-table-grey th, div.tooltip table.ns-table-brown td, div.tooltip table.ns-table-brown th {
+		padding: 8px;
+		vertical-align: top;
+		overflow: hidden;
+	}
+	
+	div.tooltip table.ns-table-grey th {
+		background-color: #302d2a; 
+		color:white; 
+		text-align:center;
+	}
+	div.tooltip table.ns-table-grey th:nth-child(1) {
+		width:40%;
+	}
+	div.tooltip table.ns-table-grey tr:nth-child(even) {
+		background-color: #cdcdcd; 
+		color:black;
+	}
+	div.tooltip table.ns-table-grey tr:nth-child(odd) {
+		background-color: #e8e8e8; 
+		color:black;
+	}
+	div.tooltip table.ns-table-grey td, table.ns-table-grey th {
+		border: 2px solid #fff;
+	}
+	
+	div.tooltip table.ns-table-brown th {
+		background-color: #e0d5cb; 
+		color:black;
+	}
+	div.tooltip table.ns-table-brown tr {
+		background-color: #fff; 
+		color:black;
+	}
+	div.tooltip table.ns-table-brown td, div.tooltip table.ns-table-brown th {
+		border: 1px solid #000;
+	}
+	
+	div.sttip table.ns-table-noborder, div.sttip table.ns-table-noborder tr, div.sttip table.ns-table-noborder td {
+		border: none;
+		padding: 0;
+	}
+	
+	div.sttip table.ns-table-noborderonly, div.sttip table.ns-table-noborderonly tr, div.sttip table.ns-table-noborderonly td {
+		border: none;
+	}
+	/*** TABLE STYLE - USED IN SALES ENABLEMENT ***/
+		
+	div.sttip table.ns-table-valign-top td{
+		vertical-align: top;
+	}	
+	
+	/*** TIP HIDE FOOTER - START ***/
+	div.sttip div.tooltip.ns-hidefooter div.popover-inner .stFooter {
+		display: none;
+	}
+	/*** TIP HIDE FOOTER - END ***/
+	
+	/*** TIP GUIDE TIPS STICKY SLIDER - START ***/
+	@keyframes ns-tip-sticky-slide-right {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(96%);
+		}
+	}
+
+	@keyframes ns-tip-sticky-slide-left {
+		0% {
+			transform: translateX(96%);
+		}
+		100% {
+			transform: translateX(0);
+		}
+	}
+	/*** TOP - RIGHT ***/
+	div.sttip div.ogl-rw-tip.ns-tip-sticky-slide-tr {
+		animation: ns-tip-sticky-slide-right 1s ease-in-out 5s forwards;
+	}
+	
+	div.sttip div.ogl-rw-tip.ns-tip-sticky-slide-tr:active {
+		animation: ns-tip-sticky-slide-left 0s ease-in-out 0s forwards;
+	}
+	
+	div.sttip div.ogl-rw-tip.ns-tip-sticky-slide-tr:hover {
+		animation-play-state: paused;
+	}
+	
+	/*** TIP GUIDE TIPS STICKY SLIDER - END ***/
+		
+	
+	/********* CUSTOM TIP - END *********/		
+	
+	/********* CUSTOM THEMES - START *********/	
+	div.sttip div.ogl-rw-tip.ns-cust-theme-1 div.stFooter {
+		background-color: transparent !important;
+	}
+	
+	/********* CUSTOM THEMES - END *********/	
+	/* ----------------------------------------------------- */
+	/* ----------------------------------------------------- */
+	/* -------------------------NSGL------------------------ */
+	/* ---------- CUSTOM CLASSES USED IN OGL - END ----------*/
+	/* ----------------------------------------------------- */
+	/* ----------------------------------------------------- */
+	/* ----------------------------------------------------- */
+	
+	/********* CUSTOMIZATION FOR SIMULATION ONLY - AFFECTS ALL SIMULATION PLAYER - START *********/
+	div.page-cover {
+		background-color: #2C5266;
+	}
+	
+	/* DEPRECATED - Target elements are not existing in the latest simulation player */
+	/*div.page-cover .page-cover-content:before {
+		content: "";
+		width: 462px;
+		height: 458px;
+		background: url('../../../../../nlcorp.app.netsuite.com/core/media/media.nl') no-repeat;
+		top: 0px;
+		right: 0px;
+		position: absolute;
+		display: inline-block;
+	}
+	
+	div.page-cover .page-cover-content:after {
+		content: "";
+		width: 207px;
+		height: 49px;
+		background: url('../../../../../nlcorp.app.netsuite.com/core/media/media.nl') no-repeat;
+		top: 50px;
+		left: 50px;
+		position: absolute;
+		display: inline-block;
+	}	
+	
+	button.round-button {
+		cursor: pointer;
+		background-color: rgba(255,255,255,1) !important;
+	}
+	
+	div.arrow-right {
+		border-left: 20px solid #2C5266 !important;
+	}	
+	
+	#startButton.start-button.button-with-caption {
+		margin-top: 8px!important;
+		visibility: hidden;
+		cursor: pointer;
+	}
+	
+	#startButton.start-button.button-with-caption:before {
+		content: "Begin Demo";
+		visibility: visible;
+		display: block;
+		border: 1px solid #FFF;
+		border-radius: 5px;
+		padding: 5px 8px;
+		color: #FFF;
+	}
+	
+	div.play-button-container-cover > svg {
+		fill: #2C5266 !important;
+	}
+	
+	#restartButton.restart-button.button-with-caption {
+		margin-top: 8px!important;
+		visibility: hidden;
+		cursor: pointer;
+	}
+	
+	#restartButton.restart-button.button-with-caption:before {
+		content: "Replay Demo";
+		visibility: visible;
+		display: block;
+		border: 1px solid #FFF;
+		border-radius: 5px;
+		padding: 5px 8px;
+		color: #FFF;
+	}*/
+	
+	#actionTarget.action-target-inactive {
+		display: none !important;
+	}
+	
+	@keyframes ns-anim-fadeIn {
+	  0% {
+		opacity: 0;
+	  }
+	  100% {
+		opacity: 1;
+	  }
+	}
+	
+	/********* CUSTOMIZATION FOR SIMULATION ONLY - END *********/
+	
+	/* ----------- END ---------- */
+	/* OGL NETSUITE CUSTOMIZATION */
+	/* -------- EDITABLE -------- */
+    
+    

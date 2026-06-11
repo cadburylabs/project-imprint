@@ -1,0 +1,111 @@
+/*
+ * Copyright © 2025, Oracle and/or its affiliates.
+ */
+
+#workflow-desktop {
+	flex-grow: 1;
+    font-size: 12px;
+    padding-right: 370px;
+    padding-top: 21px;
+    margin-left: 15px;
+    margin-right: 15px;
+    min-width: 300px;
+}
+
+#workflow-title {
+    background: url('../../pages/workflow/nextgen/images/workflow-icon.png') no-repeat;
+    height: 27px;
+    font-weight: bold;
+    color: #4d5f79;
+    font-size: 20px;
+    padding-left: 40px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+}
+
+#workflow-title .name {
+    font-weight: normal;
+    color: #888;
+}
+
+#workflow-title.locked .name {
+    background: transparent url('../../uirefresh/img/header/icon_lock_default.png') 100% 50% no-repeat;
+    padding-right: 22px;
+}
+
+.workflow-title-button {
+	float: right;
+	padding-bottom: 10px;
+	margin-right: 0 !important;
+}
+
+#workflow-view-button-info-icon {
+    width: 24px;
+    height: 24px;
+    float: right;
+    margin: 2px;
+}
+
+/* --- Menu --- */
+
+.page-title-menu {
+	position: absolute;
+	right: 20px;
+	margin-top: 3px;
+	width: 345px;
+}
+
+.page-title-menu > .ns-menu {
+	display: flex;
+}
+
+.page-title-menu > .ns-menu > .ns-menuitem:first-child {
+	margin-left: auto;
+}
+
+/* --- Dialogs --- */
+
+.dialog {
+    display: none;
+}
+
+.dialog iframe {
+    display: none;
+    border: none;
+}
+
+.ui-widget-header {
+    background: none;
+    border-radius: 0;
+    border: none;
+    font-size: 14px;
+    color: white;
+    font-weight: bolder;
+    height: 30px;
+}
+
+.ui-dialog .ui-dialog-content {
+    padding: 0;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+.ui-dialog {
+    -moz-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+.ui-widget-header .ui-icon-closethick {
+    background-image: url('../../pages/workflow/nextgen/images/popup-close.png') !important;
+    background-position: center;
+}
+
+.ui-dialog-titlebar {
+    overflow: hidden;
+}

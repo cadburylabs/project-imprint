@@ -1,0 +1,3 @@
+var TemplateSelector=TemplateSelector||{};
+TemplateSelector.showTemplateGenerationWindow=function(b){var a=parent.jQuery('<div id="wf-template-gen-dialog"></div>');parent.jQuery("#body").append(a);a.append('<div style="height: 60px; overflow: auto; ">'+b+"</div>");a.append('<div class="wf-template-gen-loader" style="margin-top: 17px;"></div>');b=parent.jQuery('<div class="wf-template-ui-overlay ui-front"></div>');parent.jQuery("#body").append(b);a.show();parent.NS.UI.Helpers.uir_loader(".wf-template-gen-loader",16)};
+//# sourceMappingURL=/assets/workflownextgen_templates/2148340382.map

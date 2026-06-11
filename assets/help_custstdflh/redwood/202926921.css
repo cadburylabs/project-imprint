@@ -1,0 +1,124 @@
+/*
+ * Copyright © 2024, Oracle and/or its affiliates.
+ */
+
+/* =========== Common for both Edit form and List pages =========== */
+
+/*Page header*/
+.uir-page-title {
+	padding: var(--nsn-uif-redwood-size-s) 0;
+}
+
+.uir-list-name {
+	font-size: var(--nsn-uif-redwood-font-size-heading-sm);
+	line-height: var(--nsn-uif-redwood-font-size-heading-md);
+	font-weight: var(--nsn-uif-redwood-font-weight-bold);
+}
+
+/* =========== Edit form related only =========== */
+
+.custFlhEditForm #div__body {
+	min-width: 640px;
+	width: 50%;
+}
+
+.custFlhEditForm table.custFLH_FormFields,
+.custFlhEditForm table.custFLH_TranslationsBar,
+.custFlhEditForm table.custFLH_TranslationsTexts {
+	width: 100%;
+}
+
+/*Make the text area wide as the column*/
+.custFlhEditForm .fullWidth {
+	width: 100%;
+}
+
+.custFlhEditForm .fullWidthHorizontal {
+	width: calc(100% - 171px); /*170 px is the width of the horizontal label*/
+}
+
+.custFlhEditForm textarea {
+	width: 100%;
+}
+
+.custFlhEditForm table.custFLH_HelpText tr td:first-child,
+.custFlhEditForm table.custFLH_FieldLabel tr td:first-child {
+	width: 170px;
+	padding-left: 4px;
+}
+
+.custFlhEditForm table.custFLH_TranslationsTexts tr td:first-child {
+	min-width: 170px;
+}
+
+.custFlhEditForm table.custFLH_TranslationsTexts thead tr td:first-child {
+	padding-left: 4px;
+}
+
+.custFlhEditForm table.custFLH_TranslationsTexts tr td:last-child {
+	width: 100px;
+	text-align: center;
+}
+
+.custFlhEditForm table.custFLH_TranslationsTexts {
+	margin-bottom: 10px;
+}
+
+.custFlhEditForm table.custFLH_Buttons {
+	margin-top: 15px;
+	margin-bottom: 0px;
+}
+
+.custFlhEditForm table.custFLH_TranslationsBar {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	color: #666666;
+	background-color: #E5E5E5;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.custFlhEditForm table.custFLH_TranslationsBar tr td:first-child {
+	padding-left: 5px;
+}
+
+.custFlhEditForm table.custFLH_TranslationsTexts {
+	border: 1px solid #cccccc !important;
+}
+
+.custFlhEditForm .custFLH_TranslationsTexts tr td textarea {
+	vertical-align: middle;
+}
+
+.custFlhEditForm .custFLH_MakeDefault {
+	margin-left: 2px; /* to make the checkbox highlight fully visible	*/
+}
+
+.custFlhEditForm .custFLH_LangSelect select {
+	width: 100%;
+	appearance: none;
+}
+
+/* =========== List related only =========== */
+
+.custFlhList {
+	padding: 0 var(--nsn-uif-redwood-size-m);
+}
+
+.custFlhList table.custFLH_List {
+	width: 100%;
+	border: 1px solid #cccccc;
+	margin-top: var(--nsn-uif-redwood-size-s);
+}
+
+.custFlhList table.custFLH_List tbody td .flhSelectSpan {
+	margin-left: 8px; /* align with header */
+}
+
+.custFlhList .custFLH_Buttons {
+	margin-top: var(--nsn-uif-redwood-size-s);
+}
+
+.custFlhList .custFLH_TypeSelect select {
+	min-width: 200px;
+}

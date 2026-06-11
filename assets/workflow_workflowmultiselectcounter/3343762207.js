@@ -1,0 +1,2 @@
+var workflowjs=workflowjs||{};workflowjs.workflowmultiselectcounter=function(){return{recalcSelected:function(c,f){require(["N/currentRecord"],function(a){var d=workflowjs.workflowMultiSelectCounterContext,b=a.get();a=b.getField({fieldId:c}).getSelectOptions();b=b.getValue({fieldId:c});var e="";0===a.length||1===a.length&&""===a[0].value||(e=1===b.length&&""===b[0]?d.selectedAll:d.selectedOf.replace("{1}",b.length).replace("{2}",a.length));nlapiSetFieldValue(f,e)})}}}();
+//# sourceMappingURL=/assets/workflow_workflowmultiselectcounter/3343762207.map

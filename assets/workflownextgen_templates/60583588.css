@@ -1,0 +1,27 @@
+#wf-template-gen-dialog{
+	display: none;
+	position: absolute;
+	z-index: 101;
+	width: 400px;
+	height: auto;
+	left: 50%;
+	top: 50%;
+	margin: -75px auto auto -200px;
+	padding: 0.6em 1em 2em;
+	border: 1px solid #c5c5c5;
+	border-radius: 3px;
+	background: #fff;
+	color: #333;
+	font-size: 13px;
+}
+
+.wf-template-ui-overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/*adjust the overlay so that it looks the same as logout overlay*/
+	background-color: rgb(204, 204, 204);
+	opacity: 0.8;
+}
